@@ -1,7 +1,11 @@
 # Dependencies & local tooling
 node_modules/
 .vercel/
+.vercel
 npm-debug.log*
+venv/
+.venv/
+__pycache__/
 
 # Raw unoptimized source media folders (already processed into images/ & videos/)
 container photos/
@@ -16,5 +20,5 @@ Thumbs.db
 desktop.ini
 *.log
 
-.vercel
+# Environment secrets
 .env*

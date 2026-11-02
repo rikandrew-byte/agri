@@ -37,104 +37,204 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Set language and persist to localStorage
+const LANG_OPTIONS = {
+    'vi': '🇻🇳 Tiếng Việt',
+    'en': '🇺🇸 English',
+    'zh-cn': '🇨🇳 简体中文',
+    'zh-tw': '🇹🇼 繁體中文',
+    'hi': '🇮🇳 हिन्दी',
+    'ar': '🇸🇦 العربية'
+};
+
+const HTML_LANG_CODES = {
+    'vi': 'vi',
+    'en': 'en',
+    'zh-cn': 'zh-CN',
+    'zh-tw': 'zh-TW',
+    'hi': 'hi',
+    'ar': 'ar'
+};
+
+function sanitizeLanguageCode(raw) {
+    if (!raw || typeof raw !== 'string') return 'en';
+    const cleaned = raw.trim().toLowerCase();
+    return Object.prototype.hasOwnProperty.call(LANG_OPTIONS, cleaned) ? cleaned : 'en';
+}
+
+function getCanonicalBaseUrl() {
+    const pathname = (window.location && window.location.pathname) ? window.location.pathname : '/';
+    if (pathname.includes('/pages/products/')) {
+        const file = pathname.split('/').pop() || 'cinnamon.html';
+        return 'https://agri.fct.vn/pages/products/' + file;
+    }
+    if (pathname.includes('/pages/products.html')) {
+        return 'https://agri.fct.vn/pages/products.html';
+    }
+    return 'https://agri.fct.vn/';
+}
+
+function syncLanguageUrlAndSeo(lang, shouldUpdateHistory) {
+    const safeLang = sanitizeLanguageCode(lang);
+
+    // Update <html lang="..." dir="...">
+    document.documentElement.setAttribute('dir', safeLang === 'ar' ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('lang', HTML_LANG_CODES[safeLang] || safeLang);
+
+    // Sync browser URL query param when user switches language interactively
+    if (shouldUpdateHistory && window.history && window.history.replaceState && /^https?:$/i.test(window.location.protocol)) {
+        try {
+            const currentUrl = new URL(window.location.href);
+            if (safeLang === 'en') {
+                currentUrl.searchParams.delete('lang');
+            } else {
+                currentUrl.searchParams.set('lang', safeLang);
+            }
+            window.history.replaceState(null, '', currentUrl.pathname + currentUrl.search + currentUrl.hash);
+        } catch (_) {}
+    }
+
+    // Update canonical & og:url to match active language variant
+    const baseCanonical = getCanonicalBaseUrl();
+    const localizedCanonical = safeLang === 'en' ? baseCanonical : (baseCanonical + '?lang=' + encodeURIComponent(safeLang));
+
+    const canonicalEl = document.querySelector('link[rel="canonical"]');
+    if (canonicalEl) {
+        canonicalEl.setAttribute('href', localizedCanonical);
+    }
+    const ogUrlEl = document.querySelector('meta[property="og:url"]');
+    if (ogUrlEl) {
+        ogUrlEl.setAttribute('content', localizedCanonical);
+    }
+
+    const seoCfg = window.siteConfig && window.siteConfig.seo ? window.siteConfig.seo : null;
+    if (seoCfg && seoCfg.ogLocale && seoCfg.ogLocale[safeLang]) {
+        const ogLocaleEl = document.querySelector('meta[property="og:locale"]');
+        if (ogLocaleEl) {
+            ogLocaleEl.setAttribute('content', seoCfg.ogLocale[safeLang]);
+        }
+    }
+
+    // Product detail pages update their own title/description in product-loader.js
+    const isProductDetailPage = window.location && window.location.pathname && window.location.pathname.includes('/pages/products/');
+    if (!isProductDetailPage && seoCfg) {
+        const isCatalogPage = window.location && window.location.pathname && window.location.pathname.includes('/pages/products.html');
+        const titleMap = isCatalogPage ? (seoCfg.productsTitle || seoCfg.title) : seoCfg.title;
+        const descMap = isCatalogPage ? (seoCfg.productsDescription || seoCfg.description) : seoCfg.description;
+        const kwMap = seoCfg.keywords;
+
+        const nextTitle = titleMap && (titleMap[safeLang] || titleMap.en);
+        const nextDesc = descMap && (descMap[safeLang] || descMap.en);
+        const nextKw = kwMap && (kwMap[safeLang] || kwMap.en);
+
+        if (nextTitle) {
+            document.title = nextTitle;
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) ogTitle.setAttribute('content', nextTitle);
+            const twTitle = document.querySelector('meta[name="twitter:title"]');
+            if (twTitle) twTitle.setAttribute('content', nextTitle);
+        }
+        if (nextDesc) {
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', nextDesc);
+            const ogDesc = document.querySelector('meta[property="og:description"]');
+            if (ogDesc) ogDesc.setAttribute('content', nextDesc);
+            const twDesc = document.querySelector('meta[name="twitter:description"]');
+            if (twDesc) twDesc.setAttribute('content', nextDesc);
+        }
+        if (nextKw) {
+            const metaKw = document.querySelector('meta[name="keywords"]');
+            if (metaKw) metaKw.setAttribute('content', nextKw);
+        }
+    }
+}
+
+// Set language and persist to localStorage + URL
 function setLanguage(lang, e) {
     if (e && e.preventDefault) {
         e.preventDefault();
     }
-    
-    // Save language to localStorage & window
-    localStorage.setItem('selectedLanguage', lang);
+
+    const safeLang = sanitizeLanguageCode(lang);
+    try {
+        localStorage.setItem('selectedLanguage', safeLang);
+    } catch (_) {}
     if (typeof window !== 'undefined') {
-        window.currentLanguage = lang;
+        window.currentLanguage = safeLang;
     }
-    
+
     // Update current language button
     const currentBtn = document.querySelector('.current-language');
-    const langOptions = {
-        'vi': '🇻🇳 Tiếng Việt',
-        'en': '🇺🇸 English',
-        'zh-cn': '🇨🇳 简体中文',
-        'zh-tw': '🇹🇼 繁體中文',
-        'hi': '🇮🇳 हिन्दी',
-        'ar': '🇸🇦 العربية'
-    };
-    
     if (currentBtn) {
-        currentBtn.textContent = langOptions[lang] || langOptions['en'];
+        currentBtn.textContent = LANG_OPTIONS[safeLang] || LANG_OPTIONS['en'];
     }
-    
+
     // Close language menu
     const menu = document.getElementById('languageMenu');
     if (menu) {
         menu.classList.remove('active');
     }
-    
-    // Set page direction for RTL languages
-    if (lang === 'ar') {
-        document.documentElement.setAttribute('dir', 'rtl');
-        document.documentElement.setAttribute('lang', 'ar');
-    } else {
-        document.documentElement.setAttribute('dir', 'ltr');
-        document.documentElement.setAttribute('lang', lang);
-    }
-    
+
+    syncLanguageUrlAndSeo(safeLang, true);
+
     // Update content from translations.js
     if (typeof updatePageContent === 'function') {
         updatePageContent();
     } else if (window.updatePageContent && typeof window.updatePageContent === 'function') {
         window.updatePageContent();
     }
-    
+
     // Update product page content from product-loader.js
     if (typeof updateProductContent === 'function') {
         updateProductContent();
     } else if (window.updateProductContent && typeof window.updateProductContent === 'function') {
         window.updateProductContent();
     }
-    
+
     // Trigger language change event for other scripts
-    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: lang } }));
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: safeLang } }));
 }
 
-// Initialize language on page load
+// Initialize language on page load (respecting ?lang= query parameter first)
 function initializeLanguage() {
-    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-    if (typeof window !== 'undefined') {
-        window.currentLanguage = savedLang;
+    let detectedLang = 'en';
+    if (typeof window.getCurrentLanguage === 'function') {
+        detectedLang = sanitizeLanguageCode(window.getCurrentLanguage());
+    } else {
+        try {
+            const urlParam = new URLSearchParams(window.location.search).get('lang');
+            detectedLang = sanitizeLanguageCode(urlParam || localStorage.getItem('selectedLanguage') || 'en');
+        } catch (_) {
+            detectedLang = 'en';
+        }
     }
-    
+
+    // Persist explicit URL ?lang= choice so subpage navigation keeps the selected language
+    try {
+        const explicitUrlLang = new URLSearchParams(window.location.search).get('lang');
+        if (explicitUrlLang && Object.prototype.hasOwnProperty.call(LANG_OPTIONS, explicitUrlLang.trim().toLowerCase())) {
+            localStorage.setItem('selectedLanguage', detectedLang);
+        }
+    } catch (_) {}
+
+    if (typeof window !== 'undefined') {
+        window.currentLanguage = detectedLang;
+    }
+
     // Update current language button display
     const currentBtn = document.querySelector('.current-language');
-    const langOptions = {
-        'vi': '🇻🇳 Tiếng Việt',
-        'en': '🇺🇸 English',
-        'zh-cn': '🇨🇳 简体中文',
-        'zh-tw': '🇹🇼 繁體中文',
-        'hi': '🇮🇳 हिन्दी',
-        'ar': '🇸🇦 العربية'
-    };
-    
     if (currentBtn) {
-        currentBtn.textContent = langOptions[savedLang] || langOptions['en'];
+        currentBtn.textContent = LANG_OPTIONS[detectedLang] || LANG_OPTIONS['en'];
     }
-    
-    // Set page direction and lang attribute
-    if (savedLang === 'ar') {
-        document.documentElement.setAttribute('dir', 'rtl');
-        document.documentElement.setAttribute('lang', 'ar');
-    } else {
-        document.documentElement.setAttribute('dir', 'ltr');
-        document.documentElement.setAttribute('lang', savedLang);
-    }
-    
+
+    syncLanguageUrlAndSeo(detectedLang, false);
+
     // Initialize translations
     if (typeof updatePageContent === 'function') {
         updatePageContent();
     } else if (window.updatePageContent && typeof window.updatePageContent === 'function') {
         window.updatePageContent();
     }
-    
+
     // Load product translations if available
     if (typeof updateProductContent === 'function') {
         updateProductContent();
@@ -167,61 +267,86 @@ function initializeMobileMenu() {
 // Contact Form Functions
 function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
-    
+
+    // Clean up any legacy cleartext PII stored by older versions
+    try {
+        localStorage.removeItem('fct_inquiries');
+    } catch (_) {}
+
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form data
+
             const formData = new FormData(contactForm);
+
+            // Anti-bot honeypot check: silently drop automated submissions filling hidden _honey field
+            const honeyVal = formData.get('_honey');
+            if (honeyVal && String(honeyVal).trim() !== '') {
+                contactForm.reset();
+                const msgEl = document.getElementById('formMessage');
+                if (msgEl) {
+                    msgEl.textContent = typeof t === 'function' ? t('form_success') : 'Thank you! Your inquiry has been received.';
+                    msgEl.className = 'form-message success';
+                }
+                return;
+            }
+
+            // Client-side rate limit (30s cooldown) to prevent rapid duplicate/bot floods
+            try {
+                const lastSubmitTs = parseInt(sessionStorage.getItem('fct_last_inquiry_ts') || '0', 10);
+                if (lastSubmitTs && (Date.now() - lastSubmitTs) < 30000) {
+                    showNotification(typeof t === 'function' ? t('form_sending') : 'Please wait a moment before sending another inquiry.', 'info');
+                    return;
+                }
+            } catch (_) {}
+
             const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                phone: formData.get('phone'),
-                company: formData.get('company'),
-                country: formData.get('country'),
-                product: formData.get('product'),
-                message: formData.get('message'),
+                name: (formData.get('name') || '').toString().trim(),
+                email: (formData.get('email') || '').toString().trim(),
+                phone: (formData.get('phone') || '').toString().trim(),
+                company: (formData.get('company') || '').toString().trim(),
+                country: (formData.get('country') || '').toString().trim(),
+                product: (formData.get('product') || '').toString().trim(),
+                message: (formData.get('message') || '').toString().trim(),
                 agree: formData.get('agree'),
-                language: localStorage.getItem('selectedLanguage') || 'en',
-                timestamp: new Date().toISOString(),
-                ip: 'N/A'
+                language: window.currentLanguage || sanitizeLanguageCode(localStorage.getItem('selectedLanguage') || 'en'),
+                timestamp: new Date().toISOString()
             };
-            
+
             // Validate required fields
             const requiredFields = ['name', 'email', 'message'];
             let isValid = true;
-            
+
             requiredFields.forEach(field => {
                 const input = contactForm.querySelector(`[name="${field}"]`);
-                if (!data[field] || data[field].trim() === '') {
+                if (!data[field]) {
                     showFieldError(input, t('form_required_field'));
                     isValid = false;
                 } else {
                     clearFieldError(input);
                 }
             });
-            
+
             // Validate email format
             if (data.email && !isValidEmail(data.email)) {
                 const emailInput = contactForm.querySelector('[name="email"]');
                 showFieldError(emailInput, t('form_invalid_email'));
                 isValid = false;
             }
-            
+
             // Validate phone format if provided
             if (data.phone && !isValidPhone(data.phone)) {
                 const phoneInput = contactForm.querySelector('[name="phone"]');
                 showFieldError(phoneInput, t('form_invalid_phone'));
                 isValid = false;
             }
-            
+
             // Validate checkbox
             if (!data.agree) {
                 showNotification(t('form_agree_required'), 'error');
                 isValid = false;
             }
-            
+
             if (isValid) {
                 submitContactForm(data, contactForm);
             }
@@ -255,33 +380,53 @@ function clearFieldError(input) {
 
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+    return emailRegex.test(email) && email.length <= 254;
 }
 
 function isValidPhone(phone) {
-    const phoneRegex = /^[\d\s\+\-\(\)]{10,}$/;
+    const phoneRegex = /^[\d\s\+\-\(\)]{10,25}$/;
     return phoneRegex.test(phone.replace(/\s/g, ''));
+}
+
+function renderFormStatusElements(container, statusText, links) {
+    if (!container) return;
+    container.textContent = '';
+
+    const textDiv = document.createElement('div');
+    textDiv.textContent = statusText;
+    container.appendChild(textDiv);
+
+    if (Array.isArray(links) && links.length > 0) {
+        const followupDiv = document.createElement('div');
+        followupDiv.className = 'form-quick-followup';
+
+        links.forEach(item => {
+            const anchor = document.createElement('a');
+            anchor.href = item.href;
+            anchor.className = item.className;
+            anchor.textContent = item.label;
+            if (item.external) {
+                anchor.target = '_blank';
+                anchor.rel = 'noopener noreferrer';
+            }
+            followupDiv.appendChild(anchor);
+        });
+
+        container.appendChild(followupDiv);
+    }
 }
 
 function submitContactForm(data, form) {
     const submitBtn = document.querySelector('.submit-btn');
-    const originalText = submitBtn.textContent;
+    const originalText = submitBtn ? submitBtn.textContent : 'Send Inquiry';
     const formMessage = document.getElementById('formMessage');
     const targetEmail = (window.siteConfig && window.siteConfig.company && window.siteConfig.company.contact && window.siteConfig.company.contact.email)
         ? window.siteConfig.company.contact.email
         : 'andrew@fct.vn';
 
-    // Show loading state
-    submitBtn.textContent = (typeof t === 'function' ? t('form_sending') : 'Sending...') || 'Sending...';
-    submitBtn.disabled = true;
-
-    // Backup inquiry locally so no lead is ever lost
-    try {
-        const inquiries = JSON.parse(localStorage.getItem('fct_inquiries') || '[]');
-        inquiries.push(data);
-        localStorage.setItem('fct_inquiries', JSON.stringify(inquiries));
-    } catch (storageErr) {
-        console.warn('Local backup skipped:', storageErr);
+    if (submitBtn) {
+        submitBtn.textContent = (typeof t === 'function' ? t('form_sending') : 'Sending...') || 'Sending...';
+        submitBtn.disabled = true;
     }
 
     const emailSubject = `[FCT Export Inquiry] ${data.company || data.name}${data.country ? ' (' + data.country + ')' : ''}${data.product ? ' - ' + data.product : ''}`;
@@ -302,6 +447,7 @@ function submitContactForm(data, form) {
         _subject: emailSubject,
         _template: 'table',
         _captcha: 'false',
+        _honey: '',
         Name: data.name,
         Email: data.email,
         Phone_WhatsApp: data.phone || 'N/A',
@@ -313,7 +459,7 @@ function submitContactForm(data, form) {
         Submitted_At: data.timestamp
     };
 
-    fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+    fetch(`https://formsubmit.co/ajax/${encodeURIComponent(targetEmail)}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -324,32 +470,28 @@ function submitContactForm(data, form) {
     .then(response => response.json().catch(() => ({})))
     .then(result => {
         const isDelivered = result && (result.success === true || result.success === 'true');
+        try {
+            sessionStorage.setItem('fct_last_inquiry_ts', String(Date.now()));
+        } catch (_) {}
         form.reset();
 
         const successText = typeof t === 'function' ? t('form_success') : 'Thank you! Your inquiry has been sent directly to andrew@fct.vn.';
         const waFollowupText = typeof t === 'function' ? t('form_whatsapp_followup') : 'Or send instantly via WhatsApp';
 
         if (isDelivered) {
-            formMessage.innerHTML = `
-                <div>${successText}</div>
-                <div class="form-quick-followup">
-                    <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="followup-wa-link">💬 ${waFollowupText}</a>
-                </div>
-            `;
-            formMessage.className = 'form-message success';
+            renderFormStatusElements(formMessage, successText, [
+                { href: whatsappUrl, className: 'followup-wa-link', label: '💬 ' + waFollowupText, external: true }
+            ]);
+            if (formMessage) formMessage.className = 'form-message success';
             showNotification(successText, 'success');
         } else {
-            // Automatic mailto fallback if endpoint awaits first-time email activation or is rate-limited
             const fallbackText = typeof t === 'function' ? t('form_fallback_notice') : 'Opened direct email to andrew@fct.vn to ensure immediate delivery.';
             window.location.href = mailtoUrl;
-            formMessage.innerHTML = `
-                <div>${fallbackText}</div>
-                <div class="form-quick-followup">
-                    <a href="${mailtoUrl}" class="followup-mail-link">✉️ ${targetEmail}</a>
-                    <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="followup-wa-link">💬 ${waFollowupText}</a>
-                </div>
-            `;
-            formMessage.className = 'form-message success';
+            renderFormStatusElements(formMessage, fallbackText, [
+                { href: mailtoUrl, className: 'followup-mail-link', label: '✉️ ' + targetEmail, external: false },
+                { href: whatsappUrl, className: 'followup-wa-link', label: '💬 ' + waFollowupText, external: true }
+            ]);
+            if (formMessage) formMessage.className = 'form-message success';
             showNotification(fallbackText, 'success');
         }
     })
@@ -359,33 +501,45 @@ function submitContactForm(data, form) {
         const waFollowupText = typeof t === 'function' ? t('form_whatsapp_followup') : 'Or send instantly via WhatsApp';
         form.reset();
         window.location.href = mailtoUrl;
-        formMessage.innerHTML = `
-            <div>${fallbackText}</div>
-            <div class="form-quick-followup">
-                <a href="${mailtoUrl}" class="followup-mail-link">✉️ ${targetEmail}</a>
-                <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="followup-wa-link">💬 ${waFollowupText}</a>
-            </div>
-        `;
-        formMessage.className = 'form-message success';
+        renderFormStatusElements(formMessage, fallbackText, [
+            { href: mailtoUrl, className: 'followup-mail-link', label: '✉️ ' + targetEmail, external: false },
+            { href: whatsappUrl, className: 'followup-wa-link', label: '💬 ' + waFollowupText, external: true }
+        ]);
+        if (formMessage) formMessage.className = 'form-message success';
         showNotification(fallbackText, 'info');
     })
     .finally(() => {
-        submitBtn.textContent = typeof t === 'function' ? t('contact.submit') : originalText;
-        submitBtn.disabled = false;
+        if (submitBtn) {
+            submitBtn.textContent = typeof t === 'function' ? t('contact.submit') : originalText;
+            submitBtn.disabled = false;
+        }
     });
 }
 
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <div class="notification-content">
-            <span class="notification-message">${message}</span>
-            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">×</button>
-        </div>
-    `;
-    
-    // Add styles
+
+    const contentWrap = document.createElement('div');
+    contentWrap.className = 'notification-content';
+
+    const msgSpan = document.createElement('span');
+    msgSpan.className = 'notification-message';
+    msgSpan.textContent = message;
+
+    const closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.className = 'notification-close';
+    closeBtn.setAttribute('aria-label', 'Close notification');
+    closeBtn.textContent = '×';
+    closeBtn.addEventListener('click', function() {
+        notification.remove();
+    });
+
+    contentWrap.appendChild(msgSpan);
+    contentWrap.appendChild(closeBtn);
+    notification.appendChild(contentWrap);
+
     const bgColor = type === 'success' ? '#2ecc71' : type === 'error' ? '#e74c3c' : '#3498db';
     notification.style.cssText = `
         position: fixed;
@@ -400,10 +554,9 @@ function showNotification(message, type = 'info') {
         max-width: 400px;
         animation: slideInRight 0.3s ease;
     `;
-    
+
     document.body.appendChild(notification);
-    
-    // Auto remove after 5 seconds
+
     setTimeout(() => {
         if (notification.parentElement) {
             notification.remove();
@@ -788,7 +941,7 @@ function initVisitorCounter() {
         }
     }
 
-    fetch(primaryUrl, { mode: 'cors', cache: 'no-store' })
+    fetch(primaryUrl, { mode: 'cors', cache: 'no-store', referrerPolicy: 'no-referrer' })
         .then(function(r) { return r.ok ? r.json() : Promise.reject(new Error('CounterAPI status ' + r.status)); })
         .then(function(data) {
             const count = data && (typeof data.count === 'number' ? data.count : data.value);
@@ -802,7 +955,7 @@ function initVisitorCounter() {
             const backupUrl = alreadyCounted
                 ? 'https://abacus.jasoncameron.dev/get/agri.fct.vn/visits'
                 : 'https://abacus.jasoncameron.dev/hit/agri.fct.vn/visits';
-            fetch(backupUrl, { mode: 'cors', cache: 'no-store' })
+            fetch(backupUrl, { mode: 'cors', cache: 'no-store', referrerPolicy: 'no-referrer' })
                 .then(function(r) { return r.ok ? r.json() : null; })
                 .then(function(data) {
                     if (data && typeof data.value === 'number') {

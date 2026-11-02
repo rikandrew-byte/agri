@@ -144,7 +144,15 @@ http://localhost:8000
 
 ## 🔄 Version History
 
-### v2.0.0 (Current) - Major Bugfix & Enhancement
+### v2.1.0 (Current) - SEO & Security Hardening
+- ✅ HTTP Security Headers on Vercel & Apache (`Content-Security-Policy` with strict `form-action`, `Strict-Transport-Security`, `Permissions-Policy`, `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`)
+- ✅ Eliminated DOM XSS sinks (`innerHTML` replaced with safe DOM APIs & `DOMParser` tag/attribute whitelist sanitization in `js/main.js`, `js/product-loader.js`, and `languages/translations.js`)
+- ✅ Privacy & Anti-Spam Hardening: removed cleartext PII storage (`fct_inquiries` in `localStorage`), added `_honey` honeypot validation + 30s rate limiting, and `no-referrer` on third-party counter requests
+- ✅ Crawlable 6-language SEO (`?lang=en|vi|zh-cn|zh-tw|hi|ar` URL routing, reciprocal `hreflang` + `x-default` across all 8 HTML pages & `sitemap.xml`, localized `<title>`/meta/OpenGraph/Twitter tags)
+- ✅ Google-compliant JSON-LD `@graph` (`Organization`, `WebSite`, `CollectionPage`, `ItemPage`, `ItemList`, `FAQPage`, `VideoObject`, `BreadcrumbList`) without self-serving `AggregateRating` or price-less `Offer` errors
+- ✅ Core Web Vitals (CLS/LCP): explicit `width`/`height` & `decoding="async"` on all images, rebuilt valid `16x16`+`32x32` `favicon.ico`, and removed invalid/unused Google Fonts requests
+
+### v2.0.0 - Major Bugfix & Enhancement
 - ✅ Fixed all critical bugs identified in code review
 - ✅ Complete 6-language translation system
 - ✅ Proper form validation with multilingual error messages  

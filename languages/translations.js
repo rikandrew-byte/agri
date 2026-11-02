@@ -1069,22 +1069,37 @@ const translations = {
 
 // Language configuration
 const languages = {
-    'vi': { name: 'Tiếng Việt', flag: '🇻🇳', dir: 'ltr' },
-    'en': { name: 'English', flag: '🇺🇸', dir: 'ltr' },
-    'zh-cn': { name: '简体中文', flag: '🇨🇳', dir: 'ltr' },
-    'zh-tw': { name: '繁體中文', flag: '🇹🇼', dir: 'ltr' },
-    'hi': { name: 'हिन्दी', flag: '🇮🇳', dir: 'ltr' },
-    'ar': { name: 'العربية', flag: '🇸🇦', dir: 'rtl' }
+    'vi': { name: 'Tiếng Việt', flag: '🇻🇳', dir: 'ltr', htmlLang: 'vi' },
+    'en': { name: 'English', flag: '🇺🇸', dir: 'ltr', htmlLang: 'en' },
+    'zh-cn': { name: '简体中文', flag: '🇨🇳', dir: 'ltr', htmlLang: 'zh-CN' },
+    'zh-tw': { name: '繁體中文', flag: '🇹🇼', dir: 'ltr', htmlLang: 'zh-TW' },
+    'hi': { name: 'हिन्दी', flag: '🇮🇳', dir: 'ltr', htmlLang: 'hi' },
+    'ar': { name: 'العربية', flag: '🇸🇦', dir: 'rtl', htmlLang: 'ar' }
 };
 
-// Default language getter
+function normalizeSupportedLang(raw) {
+    if (!raw || typeof raw !== 'string') return null;
+    const cleaned = raw.trim().toLowerCase();
+    return Object.prototype.hasOwnProperty.call(languages, cleaned) ? cleaned : null;
+}
+
+// Active language getter: URL ?lang= > localStorage > window.currentLanguage > 'en'
 function getCurrentLanguage() {
+    if (typeof window !== 'undefined' && window.location && window.location.search) {
+        try {
+            const urlLang = normalizeSupportedLang(new URLSearchParams(window.location.search).get('lang'));
+            if (urlLang) return urlLang;
+        } catch (_) {}
+    }
     if (typeof localStorage !== 'undefined') {
-        const saved = localStorage.getItem('selectedLanguage');
-        if (saved) return saved;
+        try {
+            const saved = normalizeSupportedLang(localStorage.getItem('selectedLanguage'));
+            if (saved) return saved;
+        } catch (_) {}
     }
     if (typeof window !== 'undefined' && window.currentLanguage) {
-        return window.currentLanguage;
+        const winLang = normalizeSupportedLang(window.currentLanguage);
+        if (winLang) return winLang;
     }
     return 'en';
 }
@@ -1106,8 +1121,6 @@ function t(key) {
 
 // Update page content
 function updatePageContent() {
-    const lang = getCurrentLanguage();
-    
     // Update all elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
@@ -1128,12 +1141,12 @@ function updatePageContent() {
     updateLanguageSelector();
 }
 
-// Update language selector UI
+// Update language selector UI safely with textContent
 function updateLanguageSelector() {
     const currentLang = getCurrentLanguage();
     const currentLangElement = document.querySelector('.current-language');
     if (currentLangElement && languages[currentLang]) {
-        currentLangElement.innerHTML = `${languages[currentLang].flag} ${languages[currentLang].name}`;
+        currentLangElement.textContent = `${languages[currentLang].flag} ${languages[currentLang].name}`;
     }
 }
 
@@ -1141,6 +1154,7 @@ function updateLanguageSelector() {
 if (typeof window !== 'undefined') {
     window.translations = translations;
     window.languages = languages;
+    window.normalizeSupportedLang = normalizeSupportedLang;
     window.t = t;
     window.getCurrentLanguage = getCurrentLanguage;
     window.updatePageContent = updatePageContent;
@@ -1148,5 +1162,5 @@ if (typeof window !== 'undefined') {
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { translations, languages, t, getCurrentLanguage, updatePageContent, updateLanguageSelector };
+    module.exports = { translations, languages, normalizeSupportedLang, t, getCurrentLanguage, updatePageContent, updateLanguageSelector };
 }
