@@ -1,4 +1,6 @@
 node_modules/
+.env*
+.git/
 container photos/
 product photos/
 TEA/

@@ -15,3 +15,6 @@ hoi/
 Thumbs.db
 desktop.ini
 *.log
+
+.vercel
+.env*
