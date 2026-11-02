@@ -56,7 +56,7 @@ body {
 /* Language Selector */
 .language-selector {
     position: fixed;
-    top: 20px;
+    top: 17px;
     right: 20px;
     z-index: 2000;
 }
@@ -69,14 +69,15 @@ body {
     background: linear-gradient(135deg, #B8860B 0%, #8B4513 100%);
     border: none;
     border-radius: 12px;
-    padding: 10px 18px;
+    padding: 9px 15px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     color: white;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
+    white-space: nowrap;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
 }
@@ -150,30 +151,42 @@ header {
 }
 
 .navbar {
-    padding: 18px 0;
+    padding: 14px 0;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    gap: 20px;
+    max-width: 1480px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 175px 0 28px;
+}
+
+@media (min-width: 1800px) {
+    .nav-container {
+        padding: 0 40px;
+    }
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
+img.logo-img,
 .logo-img {
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
     display: block;
-    background: transparent;
+    background: transparent !important;
     border: none;
+    box-shadow: none;
     padding: 0;
     object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -185,27 +198,36 @@ header {
 }
 
 .company-name {
-    font-size: 26px;
+    font-size: clamp(17px, 1.3vw, 21px);
     font-weight: 700;
+    white-space: nowrap;
     background: linear-gradient(135deg, #8B4513 0%, #B8860B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
 }
 
 .nav-menu {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 40px;
+    gap: clamp(4px, 0.8vw, 16px);
+    flex-shrink: 0;
+}
+
+.nav-menu li {
+    flex-shrink: 0;
 }
 
 .nav-menu a {
+    display: inline-block;
+    white-space: nowrap;
     color: #2C2C2C;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 10px 18px;
+    font-weight: 600;
+    font-size: clamp(13.5px, 1vw, 15px);
+    padding: 8px 12px;
     border-radius: 8px;
     transition: all 0.3s ease;
     position: relative;
@@ -215,7 +237,7 @@ header {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 18px;
+    left: 12px;
     width: 0;
     height: 3px;
     background: linear-gradient(90deg, #B8860B, #2D5016);
@@ -228,7 +250,7 @@ header {
 }
 
 .nav-menu a:hover::before {
-    width: calc(100% - 36px);
+    width: calc(100% - 24px);
 }
 
 .hamburger {
@@ -285,14 +307,15 @@ header {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-size: clamp(2.2rem, 4.6vw, 4.2rem);
     font-weight: 900;
     margin-bottom: 25px;
     background: linear-gradient(135deg, #8B4513 0%, #B8860B 50%, #2D5016 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1.1;
+    line-height: 1.15;
+    text-wrap: balance;
 }
 
 .hero-subtitle {
@@ -830,36 +853,51 @@ section {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Navigation for Compact Laptops & Tablets */
+@media (max-width: 1180px) {
+    .nav-container {
+        padding: 0 165px 0 20px;
+    }
+
     .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 76px;
         left: -100%;
         width: 100%;
         background: white;
         flex-direction: column;
+        align-items: stretch;
         gap: 0;
-        padding: 20px 0;
+        padding: 16px 0;
         transition: left 0.3s ease;
-        max-height: calc(100vh - 80px);
+        max-height: calc(100vh - 76px);
         overflow-y: auto;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
+    .nav-menu li {
+        width: 100%;
+    }
+
     .nav-menu a {
-        padding: 15px 25px;
+        display: block;
+        width: 100%;
+        padding: 14px 25px;
+        border-radius: 0;
         border-bottom: 1px solid #f0ebe5;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .hero {
         height: 80vh;
     }
@@ -913,9 +951,42 @@ section {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
     .container {
         padding: 0 15px;
+    }
+
+    .language-selector {
+        top: 16px;
+        right: 12px;
+    }
+
+    .current-language {
+        padding: 7px 11px;
+        font-size: 12px;
+    }
+
+    .nav-container {
+        padding: 0 126px 0 12px;
+        gap: 10px;
+    }
+
+    .logo {
+        gap: 8px;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    img.logo-img,
+    .logo-img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .company-name {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     section {
@@ -927,16 +998,7 @@ section {
     }
     
     .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .company-name {
-        font-size: 18px;
-    }
-    
-    .logo-img {
-        width: 50px;
-        height: 50px;
+        font-size: 2.1rem;
     }
     
     .nav-menu {
@@ -1238,10 +1300,14 @@ img[alt*="Black"]:not([src])::before {
     line-height: 1.3;
 }
 
-/* Fallback for broken image sources */
-img[src*=".jpg"],
-img[src*=".png"] {
+/* Fallback for broken image sources (exclude transparent PNG logos/icons) */
+.product-image img[src*=".jpg"],
+.product-detail-image img[src*=".jpg"] {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+img.footer-logo-img {
+    background: transparent !important;
 }
 
 img[src*=".jpg"]:not([src$=".jpg"]),
