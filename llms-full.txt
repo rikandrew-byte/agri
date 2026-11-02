@@ -1,0 +1,128 @@
+# FCT Vinh Thinh Joint Stock Company — Comprehensive B2B Importer & AI Search Dossier
+
+Canonical URL: https://agri.fct.vn
+Summary File: https://agri.fct.vn/llms.txt
+Last Updated: 2026-11-02
+
+---
+
+## 1. Supplier Identity & Verification
+- **Company Name (EN)**: FCT Vinh Thinh Joint Stock Company
+- **Company Name (VI)**: Công Ty Cổ Phần FCT Vĩnh Thịnh
+- **Company Name (ZH)**: 越南FCT永盛股份公司 (FCT永盛农产出口)
+- **Business Type**: Direct Agricultural Processor, Warehouse Operator & Bulk Exporter
+- **Headquarters**: Star Building, 15B Nguyen Canh Di Street, Dinh Cong Ward, Hoang Mai District, Hanoi, Vietnam
+- **Primary Export Hub**: Hai Phong Port, Northern Vietnam (`VNHPH`)
+- **Monthly Production & Export Capacity**: Up to **500 Metric Tons (MT) per month** across spices and tea
+- **Direct B2B Contact**:
+  - Contact Person: **Andrew Tseng**
+  - Email: `andrew@fct.vn`
+  - Phone / WhatsApp / WeChat: `+84 983 027 776`
+  - Zalo: `0983027776`
+  - Website: `https://agri.fct.vn`
+
+---
+
+## 2. Detailed Product Specifications, HS Codes & Container Loading
+
+### 2.1 Vietnamese Cassia Cinnamon (`Cinnamomum cassia` / `Cinnamomum loureiroi`)
+- **Product URL**: https://agri.fct.vn/pages/products/cinnamon.html
+- **HS Codes**: `0906.11` (Whole/Bark), `0906.19` (Cassia Bark), `0906.20` (Crushed/Ground Powder)
+- **Growing Origins**: Yen Bai Province & Quang Nam Province, Vietnam
+- **Grades & Cuts Supplied**:
+  1. **Tube / Rolled Whole Cassia (`桂通` / `Quế ống`)**: Length 30–45 cm, natural curled cylinder, high oil content.
+  2. **Cigarette / Cigar Cinnamon Sticks (`烟仔桂` / `Quế điếu`)**: Precision-cut 8 cm, 10 cm, 15 cm, 20 cm, 25 cm, scraped or unscraped bark.
+  3. **Split Cassia (`桂皮` / `Quế chẻ`)**: Clean lengthwise strips, sun-dried on covered floors.
+  4. **Broken Cassia / Chips (`桂碎` / `Quế vụn`)**: High-aroma bark pieces for industrial extraction & grinding.
+  5. **Pure Fine Cinnamon Powder (`肉桂粉` / `Bột quế`)**: 80–120 mesh, 100% pure ground cassia bark with zero additives.
+- **Technical Specs**:
+  - Moisture: <= 13.5%
+  - Essential Oil Content: 2.0% to 4.5%+ (grade-dependent)
+  - Admixture: <= 0.5%–1.0%
+- **Export Packaging & Container Loadability**:
+  - Compressed PP woven bales (20 kg / 25 kg) or FCT-branded 5-ply export cartons (10 kg / 15 kg / 20 kg)
+  - 20ft GP Container: ~6.5–10 MT (sticks/tubes) or ~13–15 MT (compressed bales / powder)
+  - 40ft HC Container: ~15–18 MT (cartons) or ~24–26 MT (compressed bales / powder)
+  - Minimum Order Quantity (MOQ): 1,000 kg (1 MT)
+
+### 2.2 Vietnamese Star Anise (`Illicium verum` / `Hoa Hồi Lạng Sơn` / `越南大料八角`)
+- **Product URL**: https://agri.fct.vn/pages/products/star-anise.html
+- **HS Code**: `0909.61`
+- **Growing Origin**: Lang Son Karst Highlands, Northern Vietnam
+- **Harvest Seasons**:
+  - **Spring Harvest (`Vụ Xuân` / `春果`)**: Harvested March–April
+  - **Autumn Harvest (`Vụ Thu` / `秋果` — Đại Hồi)**: Harvested August–October; large plump 8-carpels, highest essential oil & anethole concentration
+- **Technical Specs**:
+  - Whole Pods Ratio: >= 80%–85% intact 8-pointed stars (Grade A); Broken/Stem grades also available separately
+  - Moisture: <= 12.5%–13.0%
+  - Essential Oil Content: >= 8.0%–10.0%+
+  - Processing: Natural sun-dried (`生晒`) or steam-treated (`蒸制`) per destination market preference
+- **Export Packaging & Container Loadability**:
+  - 5 kg, 10 kg, or 20 kg inner PE bag + strapped 5-ply export cartons
+  - 20ft GP Container: ~6.5–7.5 MT
+  - 40ft HC Container: ~14–16 MT
+  - MOQ: 500 kg
+
+### 2.3 Cinnamon Branches & Diagonal-Sliced Cinnamon Twigs (`Gui Zhi` / `桂枝片` / `桂枝丁`)
+- **Product URL**: https://agri.fct.vn/pages/products/cinnamon-branches.html
+- **HS Code**: `0906.19`
+- **Forms**:
+  - Diagonal-sliced cinnamon twigs (`桂枝片`), uniform 2–4 mm slice thickness with visible natural oil ring
+  - Clean cut cinnamon branch segments (`桂枝丁`), 1–3 cm segments
+  - Whole dried aromatic branches (20–50 cm) for craft & natural home fragrance
+- **Export Packaging**: 25 kg – 40 kg PP woven bags
+- **MOQ**: 100 kg (decorative) / 1,000 kg (sliced twigs bulk)
+
+### 2.4 Dried Vietnamese Cinnamon Leaves (`Lá Quế Khô` / `越南肉桂叶`)
+- **Product URL**: https://agri.fct.vn/pages/products/cinnamon-leaves.html
+- **HS Code**: `0906.19` / `1211.90`
+- **Applications**: Steam distillation of cinnamon leaf oil (eugenol / cinnamaldehyde), spice extraction, herbal tea blends
+- **Moisture**: <= 12%
+- **Packaging**: Compressed bales or bulk PP woven bags
+- **MOQ**: 500 kg
+
+### 2.5 Vietnamese Highland Whole-Leaf Green Tea (`Trà Xanh Cao Nguyên` / `越南高山绿茶`)
+- **Product URL**: https://agri.fct.vn/pages/products/green-tea.html
+- **HS Code**: `0902.10` / `0902.20`
+- **Origin**: High-altitude misty terraced tea estates in Northern Vietnam
+- **Processing**: Traditional pan-fired enzyme-deactivation preserving green leaf integrity, natural sweetness, and high catechin/polyphenol levels
+- **Moisture**: <= 8.0%
+- **Packaging**: 25 kg / 50 kg PE-lined kraft sacks or PP woven bags; custom bulk packaging available
+- **MOQ**: 500 kg
+
+### 2.6 Vietnamese Highland Whole-Leaf Black Tea (`Trà Đen Cao Nguyên` / `越南高山红茶`)
+- **Product URL**: https://agri.fct.vn/pages/products/black-tea.html
+- **HS Code**: `0902.30` / `0902.40`
+- **Origin**: Northern Vietnam Highland Tea Estates
+- **Processing**: 90%–100% full oxidation whole-leaf black tea (OP / Pekoe / FBOP grades upon request), deep amber-red liquor with smooth honeyed finish
+- **Moisture**: <= 8.0%
+- **Packaging**: 25 kg / 50 kg PE-lined kraft sacks or export cartons
+- **MOQ**: 500 kg
+
+---
+
+## 3. Logistics, Documentation & Buyer FAQs
+
+- **Q: Which port does FCT Vinh Thinh ship from?**
+  A: All sea freight shipments depart primarily from **Hai Phong Port, Vietnam (`VNHPH`)**, Northern Vietnam's largest deep-water international container port, via K-LINE, ONE, Evergreen, Maersk, COSCO, and SITC.
+
+- **Q: What Incoterms and payment terms are supported?**
+  A: **FOB Hai Phong**, **CFR**, and **CIF** to any global destination port. Payment via **T/T** (deposit + balance against B/L copy) or **Irrevocable L/C at sight**.
+
+- **Q: What export documents are provided with each shipment?**
+  A: Full standard customs clearance package: Commercial Invoice, Packing List, Ocean Bill of Lading (B/L), Certificate of Origin (**C/O** Form B, Form D, Form E for China, Form AI for India, EUR.1 for Europe, CPTPP, RCEP), **Phytosanitary Certificate**, and **Fumigation Certificate**. Optional pre-shipment weight & quality inspection by **SGS** or **Vinacontrol** can be arranged at buyer's request.
+
+- **Q: Can importers request product samples before placing a container order?**
+  A: Yes. Representative evaluation samples (200g–500g per grade) are prepared directly from current warehouse stock and dispatched globally via DHL, FedEx, UPS, or SF Express.
+
+- **Q: What is the typical production and container loading lead time?**
+  A: **10 to 20 days** from order confirmation / deposit receipt for standard 20GP and 40HC containers.
+
+---
+
+## 4. Multilingual Importer Search Index
+- **English**: Vietnam cassia cinnamon exporter, bulk star anise supplier Vietnam, FOB Hai Phong spice exporter, Gui Zhi sliced cinnamon twigs Vietnam, Vietnamese bulk whole leaf green tea black tea manufacturer.
+- **Tiếng Việt**: Công ty xuất khẩu quế hồi Việt Nam, xuất khẩu quế Yên Bái, hoa hồi Lạng Sơn xuất khẩu cảng Hải Phòng, chè xanh chè đen xuất khẩu số lượng lớn.
+- **简体中文 / 繁體中文**: 越南肉桂出口商, 越南八角大料供应商, 越南桂枝片桂枝丁批发, 烟仔桂桂通海防港FOB, 越南高山绿茶红茶大宗出口.
+- **العربية**: مصدر القرفة الفيتنامية بالجملة, مورد اليانسون النجمي الفيتنامي, تصدير الشاي الأخضر والأسود الفيتنامي من ميناء هاي فونغ.
+- **हिन्दी**: वियतनाम दालचीनी निर्यातक, वियतनाम चक्र फूल (स्टार ऐनीज़) थोक आपूर्तिकर्ता, वियतनामी ग्रीन टी और ब्लैक टी निर्यातक.

@@ -162,7 +162,23 @@ const translations = {
         'tea.snap6': 'Dải đồi chè uốn lượn dọc sườn núi vùng nguyên liệu',
         'tea.snap7': 'Vùng chè độ cao lớn ven thung lũng sông',
         'tea.snap8': 'Đường nội đồng thu gom búp chè tươi trong ngày',
-        'tea.snap9': 'Khảo sát trực tiếp chất lượng vùng trồng chè'
+        'tea.snap9': 'Khảo sát trực tiếp chất lượng vùng trồng chè',
+        'footer.visitors': 'Lượt truy cập:',
+        'faq.badge': 'Cẩm Nang Nhà Nhập Khẩu Quốc Tế',
+        'faq.title': 'Câu Hỏi Thường Gặp Về Xuất Khẩu (B2B FAQ)',
+        'faq.subtitle': 'Thông tin cảng đi, mã HS Code, chứng từ hải quan và điều kiện giao thương dành cho đối tác nhập khẩu toàn cầu.',
+        'faq.q1': '1. Sản lượng tối thiểu (MOQ) và năng lực cung ứng hàng tháng là bao nhiêu?',
+        'faq.a1': 'Đơn thử nghiệm từ 500 kg – 1.000 kg; đơn hàng xuất biển đóng container 20ft GP và 40ft HC với tổng năng lực cung ứng lên đến 500 tấn/tháng cho Quế, Hoa Hồi và Chè.',
+        'faq.q2': '2. Hàng được xuất từ cảng nào và theo điều kiện Incoterms nào?',
+        'faq.a2': 'Toàn bộ lô hàng đường biển xuất phát chủ yếu qua Cảng Hải Phòng (VNHPH) theo điều kiện FOB Hải Phòng, CFR hoặc CIF đi toàn cầu qua K-LINE, ONE, Evergreen và các hãng tàu lớn.',
+        'faq.q3': '3. Mã HS Code xuất khẩu của các mặt hàng là gì?',
+        'faq.a3': 'Quế vỏ & Quế chi thái lát: HS 0906.11 / 0906.19 / 0906.20; Hoa Hồi Lạng Sơn: HS 0909.61; Chè Xanh & Chè Đen cao nguyên: HS 0902.10 – 0902.40.',
+        'faq.q4': '4. Bộ chứng từ xuất khẩu và giám định chất lượng gồm những gì?',
+        'faq.a4': 'Đầy đủ bộ chứng từ hải quan tiêu chuẩn: Invoice, Packing List, B/L, C/O (Form B, D, E, AI, EUR.1, RCEP), Kiểm dịch thực vật (Phytosanitary), Hun trùng (Fumigation) và giám định độc lập SGS / Vinacontrol theo yêu cầu.',
+        'faq.q5': '5. Công ty có gửi mẫu thử trước không và thời gian đóng cont là bao lâu?',
+        'faq.a5': 'Có — mẫu thực tế tại kho được gửi chuyển phát nhanh quốc tế qua DHL, FedEx hoặc UPS. Thời gian chuẩn bị hàng và đóng container từ 10–20 ngày sau khi xác nhận đơn.',
+        'faq.q6': '6. Phương thức thanh toán và liên hệ nhận báo giá nhanh?',
+        'faq.a6': 'Hỗ trợ thanh toán T/T hoặc L/C trả ngay. Đối tác liên hệ trực tiếp Email andrew@fct.vn hoặc WhatsApp/WeChat +84 983 027 776 để nhận báo giá FOB/CIF trong vòng 24 giờ.'
     },
 
     // English
@@ -327,7 +343,23 @@ const translations = {
         'tea.snap6': 'Sweeping Terraced Tea Slopes Across Valley',
         'tea.snap7': 'High-Altitude Tea Plateau Above River Valley',
         'tea.snap8': 'Direct Estate Road for Same-Day Leaf Harvest',
-        'tea.snap9': 'On-Site Field Inspection at Tea Sourcing Estate'
+        'tea.snap9': 'On-Site Field Inspection at Tea Sourcing Estate',
+        'footer.visitors': 'Total Visits:',
+        'faq.badge': 'B2B Importer Guide',
+        'faq.title': 'Frequently Asked Export Questions',
+        'faq.subtitle': 'Key logistics, HS Codes, documentation, and trade terms for international spice & tea buyers.',
+        'faq.q1': '1. What is your MOQ and monthly supply capacity?',
+        'faq.a1': 'Trial orders start from 500 kg – 1,000 kg. Full 20ft GP and 40ft HC container shipments are supported up to 500 MT/month across cinnamon, star anise, and tea.',
+        'faq.q2': '2. Which Port of Loading and Incoterms do you offer?',
+        'faq.a2': 'All sea freight departs primarily from Hai Phong Port, Vietnam (VNHPH) under FOB Hai Phong, CFR, or CIF terms via K-LINE, ONE, Evergreen, and major global carriers.',
+        'faq.q3': '3. What HS Codes apply to your spices and teas?',
+        'faq.a3': 'Cassia Cinnamon & Sliced Twigs: HS 0906.11 / 0906.19 / 0906.20; Lang Son Star Anise: HS 0909.61; Highland Green Tea & Black Tea: HS 0902.10 – 0902.40.',
+        'faq.q4': '4. What export documents and inspections are included?',
+        'faq.a4': 'Full customs set: Invoice, Packing List, B/L, Certificate of Origin (C/O Form B, D, E, AI, EUR.1, RCEP), Phytosanitary & Fumigation Certificates, plus optional SGS / Vinacontrol inspection.',
+        'faq.q5': '5. Do you send evaluation samples and what is the lead time?',
+        'faq.a5': 'Yes — representative warehouse samples are dispatched globally via DHL, FedEx, or UPS. Container loading typically takes 10–20 days after order confirmation.',
+        'faq.q6': '6. What payment methods do you accept?',
+        'faq.a6': 'We support flexible T/T bank transfer and Irrevocable L/C at sight. Contact andrew@fct.vn or WhatsApp/WeChat +84 983 027 776 for a direct FOB/CIF quote within 24 hours.'
     },
     
     // Simplified Chinese
@@ -487,7 +519,23 @@ const translations = {
         'tea.snap6': '连绵起伏的高原梯田茶山',
         'tea.snap7': '河谷上方的高海拔生态茶园台地',
         'tea.snap8': '茶园采收直通道路保障当日鲜叶加工',
-        'tea.snap9': 'FCT永盛团队茶园产区实地品控考察'
+        'tea.snap9': 'FCT永盛团队茶园产区实地品控考察',
+        'footer.visitors': '累计访问量：',
+        'faq.badge': '全球采购商出口指南',
+        'faq.title': '大宗出口常见问题解答 (B2B FAQ)',
+        'faq.subtitle': '面向国际香料与茶叶进口商的起运港、HS海关编码、清关单证与贸易条款说明。',
+        'faq.q1': '1. 最小起订量（MOQ）与每月供应能力是多少？',
+        'faq.a1': '试单起订量为 500–1,000 公斤；海运整柜支持 20尺普柜与 40尺高柜，肉桂、八角及茶叶月供应能力最高可达 500 吨/月。',
+        'faq.q2': '2. 主要起运港是哪里？支持哪些国际贸易术语？',
+        'faq.a2': '所有海运货柜主要自越南海防港（Hai Phong Port, VNHPH）直发，支持 FOB 海防、CFR 及 CIF 条款，合作船司包括 K-LINE、ONE、长荣（Evergreen）等。',
+        'faq.q3': '3. 贵司出口产品的海关编码（HS Code）是什么？',
+        'faq.a3': '越南肉桂及斜切桂枝片：HS 0906.11 / 0906.19 / 0906.20；谅山八角大料：HS 0909.61；越南高山绿茶与红茶：HS 0902.10 – 0902.40。',
+        'faq.q4': '4. 随货提供哪些出口清关单证与第三方检验？',
+        'faq.a4': '提供全套标准清关文件：商业发票、装箱单、海运提单（B/L）、原产地证（C/O Form E、D、B、AI、EUR.1、RCEP）、植物检疫证、熏蒸证，并可按需安排 SGS 或 Vinacontrol 装船前检验。',
+        'faq.q5': '5. 是否提供寄样服务？装柜交货期需要多久？',
+        'faq.a5': '支持寄送大货代表性样品（通过 DHL、FedEx、UPS 或顺丰国际寄达）。订单确认后常规备货与装柜周期为 10–20 天。',
+        'faq.q6': '6. 支持哪些付款方式？如何快速获取报价？',
+        'faq.a6': '支持 T/T 电汇及即期不可撤销信用证（L/C at sight）。请发送邮件至 andrew@fct.vn 或添加 WhatsApp/微信 +84 983 027 776，24小时内获取最新 FOB/CIF 报价。'
     },
     
     // Traditional Chinese
@@ -647,7 +695,23 @@ const translations = {
         'tea.snap6': '連綿起伏的高原梯田茶山',
         'tea.snap7': '河谷上方的高海拔生態茶園台地',
         'tea.snap8': '茶園採收直通道路保障當日鮮葉加工',
-        'tea.snap9': 'FCT永盛團隊茶園產區實地品控考察'
+        'tea.snap9': 'FCT永盛團隊茶園產區實地品控考察',
+        'footer.visitors': '累計造訪量：',
+        'faq.badge': '全球採購商出口指南',
+        'faq.title': '大宗出口常見問題解答 (B2B FAQ)',
+        'faq.subtitle': '面向國際香料與茶葉進口商的起運港、HS海關編碼、清關單證與貿易條款說明。',
+        'faq.q1': '1. 最小起訂量（MOQ）與每月供應能力是多少？',
+        'faq.a1': '試單起訂量為 500–1,000 公斤；海運整櫃支援 20呎普櫃與 40呎高櫃，肉桂、八角及茶葉月供應能力最高可達 500 噸/月。',
+        'faq.q2': '2. 主要起運港是哪裡？支援哪些國際貿易術語？',
+        'faq.a2': '所有海運貨櫃主要自越南海防港（Hai Phong Port, VNHPH）直發，支援 FOB 海防、CFR 及 CIF 條款，合作船司包括 K-LINE、ONE、長榮（Evergreen）等。',
+        'faq.q3': '3. 貴司出口產品的海關編碼（HS Code）是什麼？',
+        'faq.a3': '越南肉桂及斜切桂枝片：HS 0906.11 / 0906.19 / 0906.20；諒山八角：HS 0909.61；越南高山綠茶與紅茶：HS 0902.10 – 0902.40。',
+        'faq.q4': '4. 隨貨提供哪些出口清關單證與第三方檢驗？',
+        'faq.a4': '提供全套標準清關文件：商業發票、裝箱單、海運提單（B/L）、原產地證（C/O Form B、D、E、AI、EUR.1、RCEP）、植物檢疫證、燻蒸證，並可按需安排 SGS 或 Vinacontrol 裝船前檢驗。',
+        'faq.q5': '5. 是否提供寄樣服務？裝櫃交貨期需要多久？',
+        'faq.a5': '支援寄送倉庫現貨代表性樣品（透過 DHL、FedEx、UPS 或順豐國際寄達）。訂單確認後常規備貨與裝櫃週期為 10–20 天。',
+        'faq.q6': '6. 支援哪些付款方式？如何快速取得報價？',
+        'faq.a6': '支援 T/T 電匯及即期不可撤銷信用證（L/C at sight）。歡迎來信 andrew@fct.vn 或透過 WhatsApp/微信 +84 983 027 776，24小時內取得最新 FOB/CIF 報價。'
     },
     
     // Hindi
@@ -807,7 +871,23 @@ const translations = {
         'tea.snap6': 'घाटी में फैले घुमावदार सीढ़ीदार चाय बागान',
         'tea.snap7': 'नदी घाटी के ऊपर उच्च-ऊंचाई वाला चाय पठार',
         'tea.snap8': 'ताज़ी पत्तियों के संग्रह हेतु सीधा बागान मार्ग',
-        'tea.snap9': 'चाय बागान में प्रत्यक्ष गुणवत्ता निरीक्षण'
+        'tea.snap9': 'चाय बागान में प्रत्यक्ष गुणवत्ता निरीक्षण',
+        'footer.visitors': 'कुल विज़िट:',
+        'faq.badge': 'बी2बी आयातक मार्गदर्शिका',
+        'faq.title': 'निर्यात संबंधी अक्सर पूछे जाने वाले प्रश्न (FAQ)',
+        'faq.subtitle': 'अंतर्राष्ट्रीय मसाला और चाय खरीदारों के लिए पोर्ट, एचएस कोड, दस्तावेज़ और व्यापार शर्तें।',
+        'faq.q1': '1. आपकी न्यूनतम ऑर्डर मात्रा (MOQ) और मासिक आपूर्ति क्षमता क्या है?',
+        'faq.a1': 'ट्रायल ऑर्डर 500–1,000 किग्रा से शुरू होते हैं। दालचीनी, चक्र फूल और चाय के लिए 20ft और 40ft HC कंटेनर में प्रति माह 500 मीट्रिक टन तक की आपूर्ति क्षमता उपलब्ध है।',
+        'faq.q2': '2. आप किस बंदरगाह से शिपमेंट भेजते हैं और कौन से Incoterms उपलब्ध हैं?',
+        'faq.a2': 'सभी समुद्री शिपमेंट मुख्य रूप से हाई फोंग पोर्ट, वियतनाम (VNHPH) से FOB, CFR और CIF शर्तों पर K-LINE, ONE, Evergreen आदि प्रमुख शिपिंग लाइनों द्वारा भेजे जाते हैं।',
+        'faq.q3': '3. आपके मसालों और चाय के एचएस कोड (HS Codes) क्या हैं?',
+        'faq.a3': 'दालचीनी और स्लाइस: HS 0906.11 / 0906.19 / 0906.20; लैंग सोन स्टार ऐनीज़ (चक्र फूल): HS 0909.61; वियतनामी ग्रीन और ब्लैक टी: HS 0902.10 – 0902.40।',
+        'faq.q4': '4. शिपमेंट के साथ कौन से निर्यात दस्तावेज़ और निरीक्षण प्रदान किए जाते हैं?',
+        'faq.a4': 'पूर्ण कस्टम सेट: इनवॉइस, पैकिंग लिस्ट, B/L, मूल प्रमाण पत्र (C/O Form AI, B, D, E, EUR.1), फाइटोसैनिटरी और फ्यूमिगेशन प्रमाणपत्र, तथा अनुरोध पर SGS / Vinacontrol निरीक्षण।',
+        'faq.q5': '5. क्या आप सैंपल भेजते हैं और कंटेनर लोडिंग का समय कितना है?',
+        'faq.a5': 'हाँ, गोदाम से सैंपल DHL, FedEx या UPS द्वारा भेजे जाते हैं। ऑर्डर पुष्टि के बाद कंटेनर लोडिंग में सामान्यतः 10–20 दिन लगते हैं।',
+        'faq.q6': '6. आप कौन सी भुगतान विधियाँ स्वीकार करते हैं?',
+        'faq.a6': 'हम T/T बैंक ट्रांसफर और L/C स्वीकार करते हैं। 24 घंटे में FOB/CIF कोटेशन हेतु andrew@fct.vn या WhatsApp/WeChat +84 983 027 776 पर संपर्क करें।'
     },
     
     // Arabic
@@ -967,7 +1047,23 @@ const translations = {
         'tea.snap6': 'مدرجات الشاي الممتدة عبر الوادي المرتفع',
         'tea.snap7': 'هضبة شاي مرتفعة تطل على وادي النهر',
         'tea.snap8': 'طريق داخلي بالمزرعة لجمع الأوراق الطازجة يومياً',
-        'tea.snap9': 'فحص ميداني مباشر لجودة مزارع الشاي'
+        'tea.snap9': 'فحص ميداني مباشر لجودة مزارع الشاي',
+        'footer.visitors': 'إجمالي الزيارات:',
+        'faq.badge': 'دليل المستوردين الدوليين',
+        'faq.title': 'الأسئلة الشائعة حول التصدير بالجملة',
+        'faq.subtitle': 'معلومات الشحن البحري، الرموز الجمركية (HS Codes)، مستندات التخليص وشروط الدفع للمستوردين.',
+        'faq.q1': '1. ما هو الحد الأدنى للطلب (MOQ) والقدرة التصديرية الشهرية؟',
+        'faq.a1': 'تبدأ الطلبات التجريبية من 500 إلى 1,000 كجم، ونوفر شحنات حاويات كاملة 20 قدم و40 قدم عالية (40HC) بقدرة توريد تصل إلى 500 طن متري شهرياً.',
+        'faq.q2': '2. ما هو ميناء الشحن وشروط التجارة الدولية (Incoterms) المتاحة؟',
+        'faq.a2': 'تنطلق جميع الشحنات البحرية أساساً من ميناء هاي فونغ، فيتنام (VNHPH) بشروط FOB أو CFR أو CIF عبر خطوط K-LINE وONE وEvergreen.',
+        'faq.q3': '3. ما هي الرموز الجمركية (HS Codes) لمنتجاتكم؟',
+        'faq.a3': 'القرفة الفيتنامية وشرائح الأغصان: HS 0906.11 / 0906.19 / 0906.20؛ اليانسون النجمي: HS 0909.61؛ الشاي الأخضر والأسود الجبلي: HS 0902.10 – 0902.40.',
+        'faq.q4': '4. ما هي مستندات التصدير وشهادات الفحص المتوفرة؟',
+        'faq.a4': 'حزمة تخليص جمركي كاملة: فاتورة تجارية، قائمة تعبئة، بوليصة شحن (B/L)، شهادة منشأ (C/O)، شهادة صحة نباتية، شهادة تبخير، مع إمكانية فحص SGS أو Vinacontrol.',
+        'faq.q5': '5. هل توفرون عينات للفحص وما هي مدة تجهيز الحاوية؟',
+        'faq.a5': 'نعم، نرسل عينات تمثيلية من المستودع عبر DHL أو FedEx أو UPS، ويستغرق تجهيز وتحميل الحاوية عادةً من 10 إلى 20 يوماً بعد تأكيد الطلب.',
+        'faq.q6': '6. ما هي طرق الدفع المقبولة وكيف يمكن طلب عرض سعر سريع؟',
+        'faq.a6': 'نقبل التحويل البنكي (T/T) والاعتماد المستندي (L/C). تواصلوا مباشرة عبر البريد andrew@fct.vn أو واتساب/وي تشات +84 983 027 776 للحصول على عرض سعر خلال 24 ساعة.'
     }
 };
 

@@ -37,8 +37,10 @@
     <meta name="twitter:description" content="Leading exporter of premium Vietnamese cinnamon, star anise, and tea.">
     <meta name="twitter:image" content="https://agri.fct.vn/images/twitter-image.jpg">
     
-    <!-- Canonical URL -->
+    <!-- Canonical URL & AI Search Discovery -->
     <link rel="canonical" href="https://agri.fct.vn">
+    <link rel="alternate" type="text/plain" href="https://agri.fct.vn/llms.txt" title="FCT Vinh Thinh B2B Export Profile for AI Agents">
+    <link rel="alternate" type="text/plain" href="https://agri.fct.vn/llms-full.txt" title="Full B2B Spice & Tea Export Dossier">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -55,87 +57,209 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Structured Data (JSON-LD) -->
+    <!-- AI Search & Global Importer Structured Data (JSON-LD @graph) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "FCT Vinh Thinh Joint Stock Company",
-        "alternateName": "FCT Vĩnh Thịnh",
-        "url": "https://agri.fct.vn",
-        "logo": "https://agri.fct.vn/images/logo.png",
-        "description": "Leading exporter of premium Vietnamese spices and tea",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+84-983-027-776",
-            "contactType": "sales",
-            "email": "andrew@fct.vn",
-            "contactOption": "TollFree"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Star Building, 15B Nguyen Canh Di St, Dinh Cong Ward",
-            "addressLocality": "Hanoi",
-            "addressRegion": "HA",
-            "postalCode": "100000",
-            "addressCountry": "VN"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/company/fct-vinh-thinh",
-            "https://www.facebook.com/fct-vinh-thinh"
-        ],
-        "areaServed": ["TW", "CN", "IN", "TH", "SG", "MY", "AE", "SA", "DE", "NL", "GB", "FR"],
-        "knowsAbout": ["Vietnamese Cinnamon", "Star Anise", "Tea", "Spices Export"],
-        "foundingDate": "2010"
-    }
-    </script>
-
-    <!-- Business Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "FCT Vinh Thinh Joint Stock Company",
-        "image": "https://agri.fct.vn/images/logo.png",
-        "description": "Premium Vietnamese spices and tea exporter",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Star Building, 15B Nguyen Canh Di St, Dinh Cong Ward",
-            "addressLocality": "Hanoi",
-            "addressCountry": "VN"
-        },
-        "telephone": "+84-983-027-776",
-        "email": "andrew@fct.vn",
-        "priceRange": "$$",
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "08:00",
-            "closes": "17:00"
-        }
-    }
-    </script>
-
-    <!-- Product Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Vietnamese Cinnamon",
-        "brand": {
-            "@type": "Brand",
-            "name": "FCT Vinh Thinh"
-        },
-        "description": "Premium quality cinnamon from Vietnam",
-        "manufacturer": {
-            "@type": "Organization",
-            "name": "FCT Vinh Thinh Joint Stock Company"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "100"
-        }
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://agri.fct.vn/#organization",
+                "name": "FCT Vinh Thinh Joint Stock Company",
+                "alternateName": ["Công Ty Cổ Phần FCT Vĩnh Thịnh", "FCT Vinh Thinh JSC", "越南FCT永盛股份公司"],
+                "url": "https://agri.fct.vn",
+                "logo": "https://agri.fct.vn/images/logo.png",
+                "image": "https://agri.fct.vn/images/og-image.jpg",
+                "description": "Direct Vietnamese manufacturer, processor, and bulk B2B exporter of Cassia Cinnamon (HS 0906), Sliced Cinnamon Twigs (Gui Zhi), Lang Son Star Anise (HS 0909.61), and Highland Whole-Leaf Green & Black Tea (HS 0902). Up to 500 MT/month shipped via Hai Phong Port, Vietnam.",
+                "foundingDate": "2010",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+84-983-027-776",
+                    "contactType": "export sales",
+                    "email": "andrew@fct.vn",
+                    "availableLanguage": ["en", "vi", "zh-CN", "zh-TW"]
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Star Building, 15B Nguyen Canh Di St, Dinh Cong Ward",
+                    "addressLocality": "Hanoi",
+                    "addressRegion": "Hanoi",
+                    "postalCode": "100000",
+                    "addressCountry": "VN"
+                },
+                "areaServed": "Worldwide",
+                "knowsAbout": [
+                    "Vietnamese Cassia Cinnamon Export (HS 0906)",
+                    "Sliced Cinnamon Twigs Gui Zhi Export",
+                    "Lang Son Star Anise Export (HS 0909.61)",
+                    "Vietnamese Highland Green Tea Export (HS 0902)",
+                    "Vietnamese Highland Black Tea Export (HS 0902)",
+                    "FOB Hai Phong Container Shipping"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://agri.fct.vn/#website",
+                "url": "https://agri.fct.vn",
+                "name": "FCT Vinh Thinh — Vietnam Spices & Tea Exporter",
+                "publisher": { "@id": "https://agri.fct.vn/#organization" },
+                "inLanguage": ["en", "vi", "zh-CN", "zh-TW", "hi", "ar"]
+            },
+            {
+                "@type": "ItemList",
+                "name": "FCT Vinh Thinh Bulk Export Catalog",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "Product",
+                            "name": "Vietnamese Cassia Cinnamon (Tube, Stick, Split, Broken, Pure Powder)",
+                            "sku": "FCT-CIN-0906",
+                            "url": "https://agri.fct.vn/pages/products/cinnamon.html",
+                            "image": "https://agri.fct.vn/images/products/cinnamon-gallery/cinnamon-rolled-bundles.jpg",
+                            "description": "Yen Bai & Quang Nam cassia cinnamon bark: rolled tubes, cigarette sticks (8-45cm), split bark, and 80-120 mesh powder. Essential oil 2.0-4.5%+, moisture max 13.5%.",
+                            "brand": { "@type": "Brand", "name": "FCT Vinh Thinh" },
+                            "countryOfOrigin": "VN",
+                            "additionalProperty": [
+                                { "@type": "PropertyValue", "name": "HS Code", "value": "0906.11 / 0906.19 / 0906.20" },
+                                { "@type": "PropertyValue", "name": "Port of Loading", "value": "Hai Phong Port, Vietnam" },
+                                { "@type": "PropertyValue", "name": "Monthly Capacity", "value": "Up to 500 MT" }
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "availability": "https://schema.org/InStock",
+                                "url": "https://agri.fct.vn/pages/products/cinnamon.html",
+                                "seller": { "@id": "https://agri.fct.vn/#organization" }
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "Product",
+                            "name": "Vietnamese Star Anise — Lang Son Spring & Autumn Harvest",
+                            "sku": "FCT-ANI-0909",
+                            "url": "https://agri.fct.vn/pages/products/star-anise.html",
+                            "image": "https://agri.fct.vn/images/products/star-anise-gallery/star-anise-macro-pod.jpg",
+                            "description": "Lang Son whole 8-pointed star anise (Illicium verum), moisture max 12.5-13%, essential oil >= 8-10%, packed in 5kg/10kg/20kg export cartons.",
+                            "brand": { "@type": "Brand", "name": "FCT Vinh Thinh" },
+                            "countryOfOrigin": "VN",
+                            "additionalProperty": [
+                                { "@type": "PropertyValue", "name": "HS Code", "value": "0909.61" },
+                                { "@type": "PropertyValue", "name": "Origin", "value": "Lang Son, Vietnam" }
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "availability": "https://schema.org/InStock",
+                                "url": "https://agri.fct.vn/pages/products/star-anise.html",
+                                "seller": { "@id": "https://agri.fct.vn/#organization" }
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Product",
+                            "name": "Cinnamon Branches & Diagonal-Sliced Cinnamon Twigs (Gui Zhi)",
+                            "sku": "FCT-BRN-0906",
+                            "url": "https://agri.fct.vn/pages/products/cinnamon-branches.html",
+                            "image": "https://agri.fct.vn/images/products/cinnamon-gallery/cinnamon-twig-slices.jpg",
+                            "description": "Natural whole cinnamon branches, cut segments, and diagonal-sliced cinnamon twigs (Gui Zhi) packed in PP woven bags for export.",
+                            "brand": { "@type": "Brand", "name": "FCT Vinh Thinh" },
+                            "countryOfOrigin": "VN",
+                            "additionalProperty": [
+                                { "@type": "PropertyValue", "name": "HS Code", "value": "0906.19" }
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "availability": "https://schema.org/InStock",
+                                "url": "https://agri.fct.vn/pages/products/cinnamon-branches.html",
+                                "seller": { "@id": "https://agri.fct.vn/#organization" }
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "item": {
+                            "@type": "Product",
+                            "name": "Vietnamese Highland Whole-Leaf Green Tea & Black Tea",
+                            "sku": "FCT-TEA-0902",
+                            "url": "https://agri.fct.vn/pages/products/green-tea.html",
+                            "image": "https://agri.fct.vn/images/products/tea-gallery/tea-sculpted-hills.jpg",
+                            "description": "High-altitude terraced Vietnamese whole-leaf green tea and fully oxidized black tea, moisture max 8%, packed in 25kg/50kg bulk export sacks.",
+                            "brand": { "@type": "Brand", "name": "FCT Vinh Thinh" },
+                            "countryOfOrigin": "VN",
+                            "additionalProperty": [
+                                { "@type": "PropertyValue", "name": "HS Code", "value": "0902.10 / 0902.30" }
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "availability": "https://schema.org/InStock",
+                                "url": "https://agri.fct.vn/pages/products/green-tea.html",
+                                "seller": { "@id": "https://agri.fct.vn/#organization" }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is FCT Vinh Thinh's minimum order quantity (MOQ) and monthly supply capacity?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Our trial MOQ starts from 500 kg to 1,000 kg depending on the product, while standard sea-freight shipments use 20ft GP and 40ft HC containers. Total monthly supply capacity reaches up to 500 Metric Tons (MT) per month across cassia cinnamon, star anise, and highland tea."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which port do you ship from and what Incoterms do you support?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "All container shipments depart primarily from Hai Phong Port, Vietnam (VNHPH). We support FOB Hai Phong, CFR, and CIF Incoterms worldwide via major shipping lines including K-LINE, ONE, Evergreen, Maersk, and COSCO."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What export documents and quality inspections do you provide?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Every export shipment includes Commercial Invoice, Packing List, Ocean Bill of Lading (B/L), Certificate of Origin (C/O Form B, D, E, AI, EUR.1, CPTPP, RCEP), Phytosanitary Certificate, and Fumigation Certificate. Independent third-party inspection by SGS or Vinacontrol is available upon buyer request."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the HS Codes for your Vietnamese spices and tea?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Vietnamese Cassia Cinnamon & Sliced Twigs: HS 0906.11, 0906.19, and 0906.20 (powder); Lang Son Star Anise: HS 0909.61; Vietnamese Green Tea: HS 0902.10 / 0902.20; Vietnamese Black Tea: HS 0902.30 / 0902.40."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do you provide samples and what is the container loading lead time?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, evaluation samples from current warehouse stock can be sent globally via DHL, FedEx, or UPS. Standard container preparation and loading at Hai Phong Port takes 10 to 20 days after order confirmation."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What payment terms do you accept and how can importers request a fast quote?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "We accept T/T (bank transfer) and Irrevocable L/C at sight. Importers can contact Export Director Andrew Tseng directly at andrew@fct.vn or via WhatsApp / WeChat at +84 983 027 776 for a quotation within 24 hours."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -476,6 +600,44 @@
         </div>
     </section>
 
+    <!-- Global Importer Export FAQ Section -->
+    <section id="faq" class="export-faq-section">
+        <div class="container">
+            <div class="warehouse-header">
+                <span class="warehouse-badge" data-i18n="faq.badge">B2B Importer Guide</span>
+                <h2 class="section-title" data-i18n="faq.title">Frequently Asked Export Questions</h2>
+                <p class="warehouse-subtitle" data-i18n="faq.subtitle">Key logistics, HS Codes, documentation, and trade terms for international spice &amp; tea buyers.</p>
+            </div>
+
+            <div class="export-faq-grid">
+                <div class="export-faq-card">
+                    <h3 data-i18n="faq.q1">1. What is your MOQ and monthly supply capacity?</h3>
+                    <p data-i18n="faq.a1">Trial orders start from 500 kg – 1,000 kg. Full 20ft GP and 40ft HC container shipments are supported up to 500 MT/month across cinnamon, star anise, and tea.</p>
+                </div>
+                <div class="export-faq-card">
+                    <h3 data-i18n="faq.q2">2. Which Port of Loading and Incoterms do you offer?</h3>
+                    <p data-i18n="faq.a2">All sea freight departs primarily from Hai Phong Port, Vietnam (VNHPH) under FOB Hai Phong, CFR, or CIF terms via K-LINE, ONE, Evergreen, and major global carriers.</p>
+                </div>
+                <div class="export-faq-card">
+                    <h3 data-i18n="faq.q3">3. What HS Codes apply to your spices and teas?</h3>
+                    <p data-i18n="faq.a3">Cassia Cinnamon &amp; Sliced Twigs: HS 0906.11 / 0906.19 / 0906.20; Lang Son Star Anise: HS 0909.61; Highland Green Tea &amp; Black Tea: HS 0902.10 – 0902.40.</p>
+                </div>
+                <div class="export-faq-card">
+                    <h3 data-i18n="faq.q4">4. What export documents and inspections are included?</h3>
+                    <p data-i18n="faq.a4">Full customs set: Invoice, Packing List, B/L, Certificate of Origin (C/O Form B, D, E, AI, EUR.1, RCEP), Phytosanitary &amp; Fumigation Certificates, plus optional SGS / Vinacontrol inspection.</p>
+                </div>
+                <div class="export-faq-card">
+                    <h3 data-i18n="faq.q5">5. Do you send evaluation samples and what is the lead time?</h3>
+                    <p data-i18n="faq.a5">Yes — representative warehouse samples are dispatched globally via DHL, FedEx, or UPS. Container loading typically takes 10–20 days after order confirmation.</p>
+                </div>
+                <div class="export-faq-card">
+                    <h3 data-i18n="faq.q6">6. What payment methods do you accept?</h3>
+                    <p data-i18n="faq.a6">We support flexible T/T bank transfer and Irrevocable L/C at sight. Contact andrew@fct.vn or WhatsApp/WeChat +84 983 027 776 for a direct FOB/CIF quote within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -618,12 +780,12 @@
                     </div>
                     
                     <div class="certifications">
-                        <h4>Certifications</h4>
+                        <h4 data-i18n="export.docs.label">Standard Export Docs</h4>
                         <div class="cert-badges">
-                            <span class="cert-badge">ISO 22000</span>
-                            <span class="cert-badge">HACCP</span>
-                            <span class="cert-badge">Organic</span>
-                            <span class="cert-badge">Fair Trade</span>
+                            <span class="cert-badge">C/O (Form B, D, E, AI, EUR.1)</span>
+                            <span class="cert-badge">Phytosanitary</span>
+                            <span class="cert-badge">Fumigation</span>
+                            <span class="cert-badge">SGS / Vinacontrol</span>
                         </div>
                     </div>
                 </div>
@@ -646,10 +808,10 @@
                     <div class="footer-section">
                         <h4 data-i18n="footer.products_title">Products</h4>
                         <ul>
-                            <li><a href="#products" data-i18n="products.cinnamon.title">Vietnamese Cinnamon</a></li>
-                            <li><a href="#products" data-i18n="products.star_anise.title">Star Anise</a></li>
-                            <li><a href="#products" data-i18n="products.green_tea.title">Green Tea</a></li>
-                            <li><a href="#products" data-i18n="products.black_tea.title">Black Tea</a></li>
+                            <li><a href="pages/products/cinnamon.html" data-i18n="products.cinnamon.title">Vietnamese Cinnamon</a></li>
+                            <li><a href="pages/products/star-anise.html" data-i18n="products.star_anise.title">Star Anise</a></li>
+                            <li><a href="pages/products/green-tea.html" data-i18n="products.green_tea.title">Green Tea</a></li>
+                            <li><a href="pages/products/black-tea.html" data-i18n="products.black_tea.title">Black Tea</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
@@ -664,6 +826,11 @@
             </div>
             <div class="footer-bottom">
                 <p data-i18n="footer.copyright">© 2026 FCT Vinh Thinh Joint Stock Company. All rights reserved.</p>
+                <div class="visitor-counter-badge" id="visitorCounterBadge">
+                    <span class="visitor-dot" aria-hidden="true"></span>
+                    <span data-i18n="footer.visitors">Total Visits:</span>
+                    <strong id="visitorCounterValue">---</strong>
+                </div>
             </div>
         </div>
     </footer>
@@ -672,5 +839,6 @@
     <script src="config/site-config.js"></script>
     <script src="languages/translations.js"></script>
     <script src="js/main.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

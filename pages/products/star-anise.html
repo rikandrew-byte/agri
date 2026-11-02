@@ -19,6 +19,7 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://agri.fct.vn/pages/products/star-anise.html">
+    <link rel="alternate" type="text/plain" href="https://agri.fct.vn/llms.txt" title="FCT Vinh Thinh B2B Export Profile for AI Agents">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
@@ -32,20 +33,64 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Vietnamese Star Anise - Premium Quality",
-        "image": "https://agri.fct.vn/images/products/star-anise.jpg",
-        "description": "Premium Vietnamese whole star anise from spring harvest with rich aroma",
-        "brand": {
-            "@type": "Brand",
-            "name": "FCT Vinh Thinh"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "45"
-        }
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Vietnamese Star Anise - Premium Quality",
+            "image": "https://agri.fct.vn/images/products/star-anise.jpg",
+            "description": "Premium Vietnamese whole star anise from spring harvest with rich aroma",
+            "brand": {
+                    "@type": "Brand",
+                    "name": "FCT Vinh Thinh"
+            },
+            "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "45"
+            },
+            "sku": "FCT-ANI-0909",
+            "countryOfOrigin": "VN",
+            "manufacturer": {
+                    "@type": "Organization",
+                    "name": "FCT Vinh Thinh Joint Stock Company",
+                    "url": "https://agri.fct.vn"
+            },
+            "additionalProperty": [
+                    {
+                            "@type": "PropertyValue",
+                            "name": "HS Code",
+                            "value": "0909.61"
+                    },
+                    {
+                            "@type": "PropertyValue",
+                            "name": "Port of Loading",
+                            "value": "Hai Phong Port, Vietnam (VNHPH)"
+                    },
+                    {
+                            "@type": "PropertyValue",
+                            "name": "Monthly Supply Capacity",
+                            "value": "Up to 500 MT/month"
+                    },
+                    {
+                            "@type": "PropertyValue",
+                            "name": "Incoterms",
+                            "value": "FOB Hai Phong, CIF, CFR"
+                    }
+            ],
+            "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://agri.fct.vn/pages/products/star-anise.html",
+                    "eligibleQuantity": {
+                            "@type": "QuantitativeValue",
+                            "value": "500 KGM"
+                    },
+                    "seller": {
+                            "@type": "Organization",
+                            "name": "FCT Vinh Thinh Joint Stock Company",
+                            "email": "andrew@fct.vn",
+                            "telephone": "+84-983-027-776"
+                    }
+            }
     }
     </script>
     
@@ -429,6 +474,11 @@
             </div>
             <div class="footer-bottom">
                 <p data-i18n="footer.copyright">© 2026 FCT Vinh Thinh Joint Stock Company. All rights reserved.</p>
+                <div class="visitor-counter-badge" id="visitorCounterBadge">
+                    <span class="visitor-dot" aria-hidden="true"></span>
+                    <span data-i18n="footer.visitors">Total Visits:</span>
+                    <strong id="visitorCounterValue">---</strong>
+                </div>
             </div>
         </div>
     </footer>
@@ -436,5 +486,6 @@
     <script src="../../languages/translations.js"></script>
     <script src="../../js/main.js"></script>
     <script src="../../js/product-loader.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

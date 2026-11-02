@@ -848,9 +848,45 @@ section {
 .footer-bottom {
     border-top: 1px solid rgba(184, 134, 11, 0.2);
     padding-top: 20px;
-    text-align: center;
-    color: #777777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: #999999;
     font-size: 0.9rem;
+}
+
+.visitor-counter-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(184, 134, 11, 0.14);
+    border: 1px solid rgba(184, 134, 11, 0.38);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #E8DCCB;
+}
+
+.visitor-counter-badge strong {
+    color: #F4C430;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.visitor-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #34D399;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.8);
+    animation: pulseVisitorDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseVisitorDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.55; transform: scale(0.85); }
 }
 
 /* Responsive Navigation for Compact Laptops & Tablets */
@@ -2125,5 +2161,62 @@ img[src*=".png"]:not([src$=".png"])::after {
     .origin-snapshot-card img {
         width: 148px;
         height: 148px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* ===================================================
+   B2B GLOBAL IMPORTER EXPORT FAQ SECTION
+   =================================================== */
+.export-faq-section {
+    padding: 90px 0;
+    background: linear-gradient(180deg, #FAF8F5 0%, #F3ECE2 100%);
+    border-top: 1px solid rgba(184, 134, 11, 0.18);
+}
+
+.export-faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.export-faq-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(184, 134, 11, 0.22);
+    border-left: 4px solid #B8860B;
+    border-radius: 16px;
+    padding: 26px 28px;
+    box-shadow: 0 8px 24px rgba(44, 24, 16, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.export-faq-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(139, 69, 19, 0.12);
+}
+
+.export-faq-card h3 {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #8B4513;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.export-faq-card p {
+    font-size: 0.96rem;
+    color: #4A4A4A;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 820px) {
+    .export-faq-grid {
+        grid-template-columns: 1fr;
     }
 }

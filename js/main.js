@@ -763,11 +763,66 @@ function initImageLightbox() {
     });
 }
 
+// Live Global Visitor Counter (Session-Deduplicated with Dual-API Fallback)
+function initVisitorCounter() {
+    const valEl = document.getElementById('visitorCounterValue');
+    if (!valEl) return;
+
+    const STORAGE_KEY = 'fct_cached_visits';
+    const SESSION_KEY = 'fct_session_visit_counted';
+    const cached = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+    if (cached > 0) {
+        valEl.textContent = new Intl.NumberFormat().format(cached);
+    }
+
+    const alreadyCounted = sessionStorage.getItem(SESSION_KEY) === '1';
+    const primaryUrl = alreadyCounted
+        ? 'https://api.counterapi.dev/v1/fct-vinh-thinh-agri/visits/'
+        : 'https://api.counterapi.dev/v1/fct-vinh-thinh-agri/visits/up';
+
+    function renderCount(num) {
+        if (typeof num === 'number' && num > 0) {
+            localStorage.setItem(STORAGE_KEY, String(num));
+            sessionStorage.setItem(SESSION_KEY, '1');
+            valEl.textContent = new Intl.NumberFormat().format(num);
+        }
+    }
+
+    fetch(primaryUrl, { mode: 'cors', cache: 'no-store' })
+        .then(function(r) { return r.ok ? r.json() : Promise.reject(new Error('CounterAPI status ' + r.status)); })
+        .then(function(data) {
+            const count = data && (typeof data.count === 'number' ? data.count : data.value);
+            if (typeof count === 'number') {
+                renderCount(count);
+            } else {
+                throw new Error('Invalid count payload');
+            }
+        })
+        .catch(function() {
+            const backupUrl = alreadyCounted
+                ? 'https://abacus.jasoncameron.dev/get/agri.fct.vn/visits'
+                : 'https://abacus.jasoncameron.dev/hit/agri.fct.vn/visits';
+            fetch(backupUrl, { mode: 'cors', cache: 'no-store' })
+                .then(function(r) { return r.ok ? r.json() : null; })
+                .then(function(data) {
+                    if (data && typeof data.value === 'number') {
+                        renderCount(data.value);
+                    } else if (cached <= 0) {
+                        valEl.textContent = '1';
+                    }
+                })
+                .catch(function() {
+                    if (cached <= 0) valEl.textContent = '1';
+                });
+        });
+}
+
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', function() {
     initializeImagePlaceholders();
     initFloatingContactWidget();
     initImageLightbox();
+    initVisitorCounter();
 });
 
 // Re-initialize when language or dynamic content changes
