@@ -1,0 +1,31 @@
+{
+  "name": "fct-vinh-thinh-agri",
+  "version": "1.0.0",
+  "description": "FCT Vinh Thinh JSC - Vietnamese Cinnamon, Star Anise & Highland Tea Export (agri.fct.vn)",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "vietnamese-cinnamon",
+    "star-anise",
+    "vietnamese-tea",
+    "agricultural-export",
+    "fct-vinh-thinh"
+  ],
+  "author": "FCT Vinh Thinh Joint Stock Company",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rikandrew-byte/agri.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rikandrew-byte/agri/issues"
+  },
+  "homepage": "https://agri.fct.vn"
+}

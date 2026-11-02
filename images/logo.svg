@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="200" height="200">
+  <!-- Top filled circle - dark green -->
+  <circle cx="250" cy="65" r="32" fill="#1B5E20"/>
+  
+  <!-- Main large circle - CONTINUOUS -->
+  <!-- Top half - dark green -->
+  <path d="M 110 250 A 140 140 0 0 1 390 250" fill="none" stroke="#1B5E20" stroke-width="30" stroke-linecap="round"/>
+  
+  <!-- Bottom half - light green -->  
+  <path d="M 390 250 A 140 140 0 0 1 110 250" fill="none" stroke="#8BC34A" stroke-width="30" stroke-linecap="round"/>
+  
+  <!-- Left bottom circle - hollow light green -->
+  <circle cx="50" cy="410" r="28" fill="none" stroke="#8BC34A" stroke-width="16"/>
+  
+  <!-- Right bottom circle - hollow dark green --> 
+  <circle cx="450" cy="410" r="28" fill="none" stroke="#1B5E20" stroke-width="16"/>
+</svg>

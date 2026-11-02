@@ -1,0 +1,17 @@
+# Dependencies & local tooling
+node_modules/
+.vercel/
+npm-debug.log*
+
+# Raw unoptimized source media folders (already processed into images/ & videos/)
+container photos/
+product photos/
+TEA/
+que/
+hoi/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c5530">
+    <meta name="color-scheme" content="light dark">
+    
+    <title>Products - FCT Vinh Thinh Premium Spices & Tea</title>
+    <meta name="description" content="Explore our range of premium Vietnamese spices including cinnamon, star anise, and tea products for export.">
+    <meta name="keywords" content="cinnamon export, star anise, vietnamese tea, spice products, wholesale spices">
+    <meta name="author" content="FCT Vinh Thinh">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agri.fct.vn/pages/products.html">
+    
+    <!-- Alternate language versions -->
+    <link rel="alternate" hreflang="en" href="https://agri.fct.vn/pages/products.html" />
+    <link rel="alternate" hreflang="x-default" href="https://agri.fct.vn/pages/products.html" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <div class="language-dropdown">
+            <button class="current-language" onclick="toggleLanguageMenu(event)">
+                🇺🇸 English
+            </button>
+            <div class="language-menu" id="languageMenu">
+                <a href="javascript:void(0)" onclick="setLanguage('vi', event)" class="lang-option" data-lang="vi">🇻🇳 Tiếng Việt</a>
+                <a href="javascript:void(0)" onclick="setLanguage('en', event)" class="lang-option" data-lang="en">🇺🇸 English</a>
+                <a href="javascript:void(0)" onclick="setLanguage('zh-cn', event)" class="lang-option" data-lang="zh-cn">🇨🇳 简体中文</a>
+                <a href="javascript:void(0)" onclick="setLanguage('zh-tw', event)" class="lang-option" data-lang="zh-tw">🇹🇼 繁體中文</a>
+                <a href="javascript:void(0)" onclick="setLanguage('hi', event)" class="lang-option" data-lang="hi">🇮🇳 हिन्दी</a>
+                <a href="javascript:void(0)" onclick="setLanguage('ar', event)" class="lang-option" data-lang="ar">🇸🇦 العربية</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="FCT Vinh Thinh Logo" class="logo-img">
+                    <span class="company-name" data-i18n="nav.company">FCT Vinh Thinh JSC</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#products" data-i18n="nav.products">Products</a></li>
+                    <li><a href="../index.html#about" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <span data-i18n="nav.products">Products</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-detail-section">
+        <div class="container">
+            <h1 class="section-title" data-i18n="products.title">Our Export Products</h1>
+            <p class="section-intro" data-i18n="products.intro">Discover our premium selection of Vietnamese spices and tea, carefully sourced and processed for international markets.</p>
+
+            <!-- Product Filter -->
+            <div class="product-filter">
+                <button class="filter-btn active" onclick="filterProducts('all', this)" data-i18n="products.filter.all">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('spices', this)" data-i18n="products.filter.spices">Spices</button>
+                <button class="filter-btn" onclick="filterProducts('tea', this)" data-i18n="products.filter.tea">Tea</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-detail-grid">
+                <!-- Cinnamon Sticks -->
+                <div class="product-detail-card" data-category="spices">
+                    <div class="product-detail-image">
+                        <img src="../images/products/cinnamon-sticks.jpg" alt="Vietnamese Cinnamon Sticks" loading="lazy">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Vietnamese Cinnamon Sticks</h3>
+                        <p class="product-origin">Origin: Yen Bai, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Grade:</span>
+                                <span class="spec-value">Grade A, B, C</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">5-7cm, 8-10cm</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">Bulk, 25kg bags</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Export Docs:</span>
+                                <span class="spec-value">C/O, Phytosanitary, Fumigation</span>
+                            </div>
+                        </div>
+                        <p class="product-description">Premium quality cinnamon sticks with natural sweetness and warm aroma. Perfect for food industry, beverages, and spice blends.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Cinnamon Powder -->
+                <div class="product-detail-card" data-category="spices">
+                    <div class="product-detail-image">
+                        <img src="../images/products/cinnamon-powder.jpg" alt="Cinnamon Powder" loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Cinnamon Powder</h3>
+                        <p class="product-origin">Origin: Yen Bai, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Fineness:</span>
+                                <span class="spec-value">100 mesh</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Moisture:</span>
+                                <span class="spec-value">Max 8%</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">1kg bags, 25kg bags</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Storage:</span>
+                                <span class="spec-value">Cool & dry place</span>
+                            </div>
+                        </div>
+                        <p class="product-description">Fine cinnamon powder ideal for baking, confectionery, and beverage industry. Maintains fresh aroma and flavor.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Cinnamon Chips -->
+                <div class="product-detail-card" data-category="spices">
+                    <div class="product-detail-image">
+                        <img src="../images/products/cinnamon-chips.jpg" alt="Cinnamon Chips" loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Cinnamon Chips</h3>
+                        <p class="product-origin">Origin: Yen Bai, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Size:</span>
+                                <span class="spec-value">5-10mm</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Grade:</span>
+                                <span class="spec-value">A, B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Uses:</span>
+                                <span class="spec-value">Essential oil extraction, Tea</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Yield:</span>
+                                <span class="spec-value">Essential oil: 2-4%</span>
+                            </div>
+                        </div>
+                        <p class="product-description">High-quality cinnamon chips suitable for essential oil extraction and industrial applications.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Star Anise -->
+                <div class="product-detail-card" data-category="spices">
+                    <div class="product-detail-image">
+                        <img src="../images/products/star-anise-premium.jpg" alt="Star Anise" loading="lazy">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Star Anise</h3>
+                        <p class="product-origin">Origin: Quang Nam, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Grade:</span>
+                                <span class="spec-value">Grade 1, Grade 2</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Anethole Content:</span>
+                                <span class="spec-value">Min 85%</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">20kg bags</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Harvest Season:</span>
+                                <span class="spec-value">Spring & Autumn</span>
+                            </div>
+                        </div>
+                        <p class="product-description">Whole star anise with rich aroma and flavor. Widely used in food, beverage, and pharmaceutical industries.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Cinnamon Leaves -->
+                <div class="product-detail-card" data-category="spices">
+                    <div class="product-detail-image">
+                        <img src="../images/products/cinnamon-leaves-dried.jpg" alt="Cinnamon Leaves" loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Dried Cinnamon Leaves</h3>
+                        <p class="product-origin">Origin: Yen Bai, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Processing:</span>
+                                <span class="spec-value">Sun-dried, Natural</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Essential Oil:</span>
+                                <span class="spec-value">1.5-2.5%</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Applications:</span>
+                                <span class="spec-value">Essential oil, Tea, Aromatherapy</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">30kg bags</span>
+                            </div>
+                        </div>
+                        <p class="product-description">Fresh dried cinnamon leaves ideal for essential oil extraction and traditional tea brewing.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Green Tea -->
+                <div class="product-detail-card" data-category="tea">
+                    <div class="product-detail-image">
+                        <img src="../images/products/green-tea-premium.jpg" alt="Premium Green Tea" loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Premium Vietnamese Green Tea</h3>
+                        <p class="product-origin">Origin: Highland regions, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Types:</span>
+                                <span class="spec-value">Sencha, Gunpowder, Jasmine</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Grade:</span>
+                                <span class="spec-value">Grade A, B</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Export Docs:</span>
+                                <span class="spec-value">C/O, Phytosanitary, Fumigation</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">1kg, 5kg, 25kg bags</span>
+                            </div>
+                        </div>
+                        <p class="product-description">Premium green tea with fresh aroma and health benefits. Perfect for export to Asian and European markets.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Black Tea -->
+                <div class="product-detail-card" data-category="tea">
+                    <div class="product-detail-image">
+                        <img src="../images/products/black-tea-premium.jpg" alt="Premium Black Tea" loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <h3>Premium Vietnamese Black Tea</h3>
+                        <p class="product-origin">Origin: Da Lat, Tay Nguyen, Vietnam</p>
+                        <div class="product-specs-detail">
+                            <div class="spec">
+                                <span class="spec-label">Grade:</span>
+                                <span class="spec-value">Whole leaf, Broken leaf</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Oxidation:</span>
+                                <span class="spec-value">Fully oxidized (90-100%)</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Harvest:</span>
+                                <span class="spec-value">Spring & Summer</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Packaging:</span>
+                                <span class="spec-value">1kg, 5kg, 25kg bags</span>
+                            </div>
+                        </div>
+                        <p class="product-description">High-quality black tea with rich flavor and deep color. Ideal for direct consumption and blending.</p>
+                        <button class="btn btn-primary inquire-btn" onclick="scrollToContact()">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose FCT Vinh Thinh</h2>
+            <div class="why-choose-grid">
+                <div class="why-card">
+                    <div class="why-icon">🌾</div>
+                    <h3>Strict Quality &amp; Export Docs</h3>
+                    <p>Full standard export documentation provided (C/O, Phytosanitary, Fumigation) with optional SGS or Vinacontrol inspection.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🚢</div>
+                    <h3>500 MT/Month via Hai Phong Port</h3>
+                    <p>Up to 500 tons monthly supply capacity shipped directly via Hai Phong Port (20ft, 40ft, 40HC containers).</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🤝</div>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated account managers provide technical assistance and market insights to our clients.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💰</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Bulk discounts and flexible payment terms for wholesale orders from international buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="FCT Vinh Thinh Logo" class="footer-logo-img">
+                        <span class="company-name" data-i18n="nav.company">FCT Vinh Thinh</span>
+                    </div>
+                    <p data-i18n="footer.export">Vietnam Spice & Tea Exporter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="../index.html#about">About Us</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>+84 983 027 776</li>
+                            <li>andrew@fct.vn</li>
+                            <li>Hanoi, Vietnam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2026 FCT Vinh Thinh Joint Stock Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../config/site-config.js"></script>
+    <script src="../languages/translations.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function filterProducts(category, clickedButton) {
+            const products = document.querySelectorAll('.product-detail-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (clickedButton) {
+                clickedButton.classList.add('active');
+            }
+            
+            products.forEach(product => {
+                if (category === 'all' || product.getAttribute('data-category') === category) {
+                    product.style.display = 'flex';
+                    setTimeout(() => product.classList.add('fade-in'), 10);
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        function scrollToContact() {
+            const contactSection = document.querySelector('#contact') || document.querySelector('.contact-section');
+            if (contactSection) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = contactSection.offsetTop - headerHeight - 20;
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            } else {
+                window.location.href = '../index.html#contact';
+            }
+        }
+    </script>
+</body>
+</html>

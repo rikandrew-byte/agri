@@ -1,0 +1,19 @@
+# FCT Vinh Thinh Agricultural Export (agri.fct.vn)
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /pages/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /assets/
+Allow: /videos/
+Allow: /languages/
+Allow: /config/
+
+Disallow: /admin/
+Disallow: /*.php$
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://agri.fct.vn/sitemap.xml
