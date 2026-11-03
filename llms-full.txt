@@ -84,20 +84,41 @@ Last Updated: 2026-11-02
 ### 2.5 Vietnamese Highland Whole-Leaf Green Tea (`Trà Xanh Cao Nguyên` / `越南高山绿茶`)
 - **Product URL**: https://agri.fct.vn/pages/products/green-tea.html
 - **HS Code**: `0902.10` / `0902.20`
-- **Origin**: High-altitude misty terraced tea estates in Northern Vietnam
-- **Processing**: Traditional pan-fired enzyme-deactivation preserving green leaf integrity, natural sweetness, and high catechin/polyphenol levels
-- **Moisture**: <= 8.0%
-- **Packaging**: 25 kg / 50 kg PE-lined kraft sacks or PP woven bags; custom bulk packaging available
-- **MOQ**: 500 kg
+- **Origin**: Northern Vietnam Highlands (Thai Nguyen, Yen Bai, Phu Tho)
+- **Commercial Export Grades**:
+  1. **OP (Orange Pekoe)**: Whole wired curled leaf, bright green-yellow liquor, sweet honeyed finish, Total Ash <= 6.0%.
+  2. **Pekoe / TH101**: Curled bold leaf, full-bodied aromatic cup, ideal for loose-leaf retail & commercial blending.
+  3. **PS & BPS / Fannings**: Flaky sifted leaves (3–5 mm), rapid intense liquor extraction, high-yield base for tea bags, milk tea, and RTD beverage bottling.
+- **Physical-Chemical Parameters**:
+  - Moisture: <= 7.5% – 8.0%
+  - Admixture: <= 0.5% – 1.0%
+  - Water-Soluble Extract: >= 32% – 36% min
+  - Total Ash: 4.0% – 6.5% | Crude Fiber: <= 15.5%
+- **Export Packaging & Container Loadability**:
+  - 20–25 kg PE-lined multi-wall Kraft paper sacks or 30–45 kg PP/PE woven bags with container desiccant poles
+  - 20ft GP Container: 10–12 MT
+  - 40ft HC Container: 20–24 MT
+  - MOQ: 500 kg
 
 ### 2.6 Vietnamese Highland Whole-Leaf Black Tea (`Trà Đen Cao Nguyên` / `越南高山红茶`)
 - **Product URL**: https://agri.fct.vn/pages/products/black-tea.html
 - **HS Code**: `0902.30` / `0902.40`
-- **Origin**: Northern Vietnam Highland Tea Estates
-- **Processing**: 90%–100% full oxidation whole-leaf black tea (OP / Pekoe / FBOP grades upon request), deep amber-red liquor with smooth honeyed finish
-- **Moisture**: <= 8.0%
-- **Packaging**: 25 kg / 50 kg PE-lined kraft sacks or export cartons
-- **MOQ**: 500 kg
+- **Origin**: Northern Vietnam Highland Tea Estates & Central Highlands (Bao Loc / Lam Dong)
+- **Commercial Export Grades**:
+  1. **Orthodox OP & FBOP (Flowery Broken Orange Pekoe)**: Dark wired whole leaves with golden tips, rich amber-red liquor, smooth honey-malt aroma.
+  2. **Orthodox Pekoe / PS / BPS**: Strong robust body, rich reddish color holding exceptional strength with milk or ice.
+  3. **CTC Black Tea (BP1, PF1, PD)**: Uniform high-density granular particles, instant rich infusion, maximum 40HC container payload efficiency.
+- **Physical-Chemical Parameters**:
+  - Oxidation: 90% – 100% full oxidation
+  - Moisture: <= 7.5% – 8.0%
+  - Admixture: <= 0.5% – 1.0%
+  - Water-Soluble Extract: >= 32% – 38% min
+  - Total Ash: 4.0% – 6.5% | Crude Fiber: <= 16.0%
+- **Export Packaging & Container Loadability**:
+  - 20–25 kg Multi-wall foil/PE-lined paper sacks or 25–40 kg PP/PE bags
+  - 20ft GP Container: 10–13 MT
+  - 40ft HC Container: 21–25 MT
+  - MOQ: 500 kg
 
 ---
 

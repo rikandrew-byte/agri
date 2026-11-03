@@ -2248,3 +2248,319 @@ img[src*=".png"]:not([src$=".png"])::after {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ===================================================
+   CLASSIFIED EXPORT CATALOG & TECHNICAL SPEC MATRIX
+   =================================================== */
+.classified-catalog-subtitle {
+    text-align: center;
+    max-width: 840px;
+    margin: -18px auto 30px;
+    font-size: 1.05rem;
+    color: #555555;
+    line-height: 1.7;
+}
+
+.classified-catalog-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 38px;
+}
+
+.catalog-tab-btn {
+    appearance: none;
+    border: 1.5px solid rgba(139, 69, 19, 0.25);
+    background: #ffffff;
+    color: #5a3e28;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.22s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.catalog-tab-btn:hover {
+    border-color: #B8860B;
+    color: #8B4513;
+    transform: translateY(-1px);
+}
+
+.catalog-tab-btn.active {
+    background: linear-gradient(135deg, #8B4513 0%, #B8860B 100%);
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.25);
+}
+
+.classified-catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.classified-spec-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(139, 69, 19, 0.14);
+    box-shadow: 0 8px 26px rgba(44, 24, 16, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.classified-spec-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 38px rgba(139, 69, 19, 0.14);
+    border-color: rgba(184, 134, 11, 0.42);
+}
+
+.classified-card-media {
+    position: relative;
+    width: 100%;
+    height: 225px;
+    background: #1f2420;
+    overflow: hidden;
+}
+
+.classified-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.classified-spec-card:hover .classified-card-media img {
+    transform: scale(1.06);
+}
+
+.classified-hs-pill {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(20, 26, 21, 0.85);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    z-index: 2;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.classified-grade-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #B8860B 0%, #8B4513 100%);
+    color: #ffffff;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
+    z-index: 2;
+}
+
+.classified-card-body {
+    padding: 20px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.classified-origin-line {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #2c5530;
+    margin-bottom: 6px;
+    letter-spacing: 0.2px;
+}
+
+.classified-card-title {
+    font-size: 1.13rem;
+    font-weight: 800;
+    color: #2b1d12;
+    line-height: 1.38;
+    margin: 0 0 14px;
+}
+
+.classified-spec-rows {
+    border-top: 1px solid #f0ebe4;
+    border-bottom: 1px solid #f0ebe4;
+    padding: 10px 0;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+}
+
+.classified-spec-row {
+    display: grid;
+    grid-template-columns: 118px 1fr;
+    gap: 8px;
+    font-size: 13.2px;
+    line-height: 1.45;
+    align-items: baseline;
+}
+
+.classified-spec-row .cs-key {
+    font-weight: 700;
+    color: #7a4b21;
+}
+
+.classified-spec-row .cs-val {
+    color: #363636;
+    font-weight: 500;
+}
+
+.classified-container-bar {
+    background: linear-gradient(90deg, rgba(44, 85, 48, 0.09) 0%, rgba(184, 134, 11, 0.12) 100%);
+    border: 1px solid rgba(44, 85, 48, 0.2);
+    border-radius: 10px;
+    padding: 9px 12px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: 12.8px;
+}
+
+.classified-container-bar .cc-label {
+    color: #2c5530;
+    font-weight: 700;
+}
+
+.classified-container-bar .cc-val {
+    color: #8B4513;
+    font-weight: 800;
+}
+
+.classified-card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.classified-card-actions .classified-btn {
+    padding: 10px 12px;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Detail Page Grade Classification & Container Matrix Table */
+.grade-spec-matrix-section {
+    padding: 65px 0 55px;
+    background: linear-gradient(180deg, #FAF8F5 0%, #FFFFFF 100%);
+    border-top: 1px solid rgba(184, 134, 11, 0.18);
+    border-bottom: 1px solid rgba(184, 134, 11, 0.14);
+}
+
+.grade-matrix-scroll-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(44, 24, 16, 0.08);
+    border: 1px solid rgba(139, 69, 19, 0.18);
+    background: #ffffff;
+}
+
+.grade-matrix-table {
+    width: 100%;
+    min-width: 880px;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+[dir="rtl"] .grade-matrix-table {
+    text-align: right;
+}
+
+.grade-matrix-table thead tr {
+    background: linear-gradient(135deg, #2c5530 0%, #8B4513 100%);
+    color: #ffffff;
+}
+
+.grade-matrix-table th {
+    padding: 15px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.grade-matrix-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #efeae2;
+    color: #3a3a3a;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.grade-matrix-table tbody tr:nth-child(even) {
+    background: #fcfaf7;
+}
+
+.grade-matrix-table tbody tr:hover {
+    background: rgba(184, 134, 11, 0.07);
+}
+
+.grade-matrix-table .gm-grade-col {
+    font-weight: 800;
+    color: #2b1d12;
+    min-width: 200px;
+}
+
+.grade-matrix-table .gm-hs-col {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-weight: 700;
+    color: #2c5530;
+    white-space: nowrap;
+}
+
+.grade-matrix-table .gm-load-col {
+    font-weight: 800;
+    color: #8B4513;
+    white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+    .classified-catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+}
+
+@media (max-width: 680px) {
+    .classified-catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .classified-spec-row {
+        grid-template-columns: 108px 1fr;
+    }
+    .catalog-tab-btn {
+        padding: 8px 15px;
+        font-size: 0.88rem;
+    }
+}

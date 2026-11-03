@@ -5,32 +5,36 @@
       "rating": "⭐ 4.8/5 - 50+ International Buyers",
       "specs": [
         {
+          "label": "HS Code:",
+          "value": "0906.11 / 0906.19 / 0906.20"
+        },
+        {
           "label": "Origin:",
           "value": "Yen Bai Province, Vietnam"
         },
         {
-          "label": "Grade:",
-          "value": "A, B, C (Various Quality Levels)"
-        },
-        {
-          "label": "Forms Available:",
-          "value": "Sticks, Chips, Split, Powder"
-        },
-        {
-          "label": "Oil Content:",
-          "value": "2.5-5.0%"
+          "label": "Commercial Grades:",
+          "value": "Whole/Tube (Grade A-C), Cigarette/Finger, Split, Cut & Broken, Powder"
         },
         {
           "label": "Moisture:",
-          "value": "12% Maximum"
+          "value": "13.5% max (Powder 10-12% max)"
         },
         {
-          "label": "Packaging:",
-          "value": "50kg, 25kg, or Custom"
+          "label": "Admixture:",
+          "value": "0.5% – 1.0% max (No fungus/mold)"
         },
         {
-          "label": "MOQ:",
-          "value": "1 Ton"
+          "label": "Essential Oil:",
+          "value": "2.5% – 4.5% min"
+        },
+        {
+          "label": "Export Packing:",
+          "value": "10/20 kg Net Carton or 20-25 kg Compressed Bale"
+        },
+        {
+          "label": "Container Load:",
+          "value": "5.5–10 MT / 20FCL · 12.5–25 MT / 40HC (Hai Phong Port)"
         }
       ],
       "btn_quote": "Request Quote",
@@ -71,32 +75,36 @@
       "rating": "⭐ 4.8/5 - Hơn 50 đối tác quốc tế tin dùng",
       "specs": [
         {
+          "label": "Mã HS:",
+          "value": "0906.11 / 0906.19 / 0906.20"
+        },
+        {
           "label": "Xuất xứ:",
           "value": "Tỉnh Yên Bái, Việt Nam"
         },
         {
-          "label": "Phân loại:",
-          "value": "Loại A, B, C (Nhiều cấp độ chất lượng)"
-        },
-        {
-          "label": "Dạng sản phẩm:",
-          "value": "Quế ống, quế bào vụn, quế vuông, quế bột"
-        },
-        {
-          "label": "Hàm lượng tinh dầu:",
-          "value": "2.5 - 5.0%"
+          "label": "Phẩm cấp:",
+          "value": "Quế ống (A-C), Quế điếu thuốc, Quế chẻ, Quế vụn/vuông, Quế bột"
         },
         {
           "label": "Độ ẩm:",
-          "value": "Tối đa 12%"
+          "value": "Tối đa 13.5% (Bột 10-12%)"
         },
         {
-          "label": "Quy cách đóng gói:",
-          "value": "Bao 50kg, 25kg hoặc theo yêu cầu"
+          "label": "Tạp chất:",
+          "value": "Tối đa 0.5% – 1.0% (Không nấm mốc)"
         },
         {
-          "label": "MOQ:",
-          "value": "1 Tấn"
+          "label": "Hàm lượng tinh dầu:",
+          "value": "2.5% – 4.5% min"
+        },
+        {
+          "label": "Đóng gói xuất khẩu:",
+          "value": "Thùng Carton 10/20 kg hoặc Kiện ép bành 20-25 kg"
+        },
+        {
+          "label": "Định mức đóng cont:",
+          "value": "5.5–10 tấn / 20FCL · 12.5–25 tấn / 40HC (Cảng Hải Phòng)"
         }
       ],
       "btn_quote": "Nhận Báo Giá",
@@ -137,32 +145,36 @@
       "rating": "⭐ 4.8/5 - 50+ 位國際買家認可",
       "specs": [
         {
-          "label": "產地：",
-          "value": "越南安沛省"
+          "label": "HS編碼:",
+          "value": "0906.11 / 0906.19 / 0906.20"
         },
         {
-          "label": "等級：",
-          "value": "A、B、C 等級（多種品質規格）"
+          "label": "原產地:",
+          "value": "越南安沛省（Yen Bai）"
         },
         {
-          "label": "供應形式：",
-          "value": "肉桂條、肉桂片、肉桂塊、肉桂粉"
+          "label": "出口品級:",
+          "value": "桂通/圓筒桂（A-C級）、煙桂/指桂、開甲中肉、方塊/碎肉桂、純肉桂粉"
         },
         {
-          "label": "精油含量：",
-          "value": "2.5 - 5.0%"
+          "label": "水分上限:",
+          "value": "≤ 13.5%（純粉 ≤ 10-12%）"
         },
         {
-          "label": "水分：",
-          "value": "最高 12%"
+          "label": "雜質上限:",
+          "value": "≤ 0.5% – 1.0%（潔淨無霉變）"
         },
         {
-          "label": "包裝：",
-          "value": "50公斤、25公斤或客製包裝"
+          "label": "揮發精油:",
+          "value": "2.5% – 4.5% min"
         },
         {
-          "label": "起訂量：",
-          "value": "1 噸"
+          "label": "包裝方式:",
+          "value": "10/20 kg 紙箱 或 20-25 kg 壓縮緊包"
+        },
+        {
+          "label": "貨櫃裝載量:",
+          "value": "5.5–10 噸 / 20GP · 12.5–25 噸 / 40HC（海防港起運）"
         }
       ],
       "btn_quote": "索取報價",
@@ -203,32 +215,36 @@
       "rating": "⭐ 4.8/5 - 50+ 位国际买家认可",
       "specs": [
         {
-          "label": "产地：",
-          "value": "越南安沛省"
+          "label": "HS编码:",
+          "value": "0906.11 / 0906.19 / 0906.20"
         },
         {
-          "label": "等级：",
-          "value": "A、B、C 等级（多种品质规格）"
+          "label": "原产地:",
+          "value": "越南安沛省（Yen Bai）"
         },
         {
-          "label": "供应形式：",
-          "value": "肉桂条、肉桂片、肉桂块、肉桂粉"
+          "label": "出口品级:",
+          "value": "桂通/圆筒桂（A-C级）、烟桂/指桂、开甲中肉、方块/碎肉桂、纯肉桂粉"
         },
         {
-          "label": "精油含量：",
-          "value": "2.5 - 5.0%"
+          "label": "水分上限:",
+          "value": "≤ 13.5%（纯粉 ≤ 10-12%）"
         },
         {
-          "label": "水分：",
-          "value": "最高 12%"
+          "label": "杂质上限:",
+          "value": "≤ 0.5% – 1.0%（洁净无霉变）"
         },
         {
-          "label": "包装：",
-          "value": "50公斤、25公斤或定制包装"
+          "label": "挥发精油:",
+          "value": "2.5% – 4.5% min"
         },
         {
-          "label": "起订量：",
-          "value": "1 吨"
+          "label": "包装方式:",
+          "value": "10/20 kg 纸箱 或 20-25 kg 压缩紧包"
+        },
+        {
+          "label": "集装箱装载量:",
+          "value": "5.5–10 吨 / 20GP · 12.5–25 吨 / 40HC（海防港起运）"
         }
       ],
       "btn_quote": "索取报价",
@@ -269,32 +285,36 @@
       "rating": "⭐ 4.8/5 - 50+ अंतर्राष्ट्रीय खरीदार",
       "specs": [
         {
+          "label": "HS कोड:",
+          "value": "0906.11 / 0906.19 / 0906.20"
+        },
+        {
           "label": "उत्पत्ति:",
           "value": "येन बाई प्रांत, वियतनाम"
         },
         {
-          "label": "ग्रेड:",
-          "value": "ग्रेड A, B, C"
-        },
-        {
-          "label": "उपलब्ध रूप:",
-          "value": "दालचीनी की छड़ें, चिप्स, विभाजित, पाउडर"
-        },
-        {
-          "label": "तेल सामग्री:",
-          "value": "2.5 - 5.0%"
+          "label": "वाणिज्यिक ग्रेड:",
+          "value": "होल/ट्यूब (ग्रेड A-C), सिगरेट, स्प्लिट, ब्रोकन, दालचीनी पाउडर"
         },
         {
           "label": "नमी:",
-          "value": "अधिकतम 12%"
+          "value": "अधिकतम 13.5% (पाउडर 10-12%)"
         },
         {
-          "label": "पैकेजिंग:",
-          "value": "50kg, 25kg या अनुकूलित"
+          "label": "अशुद्धता:",
+          "value": "0.5% – 1.0% अधिकतम (फंगस-मुक्त)"
         },
         {
-          "label": "MOQ:",
-          "value": "1 टन"
+          "label": "आवश्यक तेल:",
+          "value": "2.5% – 4.5% न्यूनतम"
+        },
+        {
+          "label": "पैकिंग:",
+          "value": "10/20 किग्रा कार्टन या 20-25 किग्रा संपीड़ित गांठ"
+        },
+        {
+          "label": "कंटेनर लोड:",
+          "value": "5.5–10 MT / 20FCL · 12.5–25 MT / 40HC (हाई फोंग पोर्ट)"
         }
       ],
       "btn_quote": "कोटेशन का अनुरोध करें",
@@ -335,32 +355,36 @@
       "rating": "⭐ 4.8/5 - أكثر من 50 مشتري دولي",
       "specs": [
         {
-          "label": "المنشأ:",
+          "label": "رمز النظام المنسق (HS):",
+          "value": "0906.11 / 0906.19 / 0906.20"
+        },
+        {
+          "label": "بلد المنشأ:",
           "value": "مقاطعة ين باي، فيتنام"
         },
         {
-          "label": "الدرجة:",
-          "value": "الدرجة A, B, C"
+          "label": "الدرجات التجارية:",
+          "value": "أنابيب كاملة (A-C)، سجائر، مشقوقة، مكسورة، ومسحوق قرفة"
         },
         {
-          "label": "الأشكال المتوفرة:",
-          "value": "أعواد، رقائق، مقطعة، مسحوق"
+          "label": "الرطوبة القصوى:",
+          "value": "13.5% كحد أقصى (المسحوق 10-12%)"
         },
         {
-          "label": "محتوى الزيت:",
-          "value": "2.5 - 5.0%"
+          "label": "الشوائب:",
+          "value": "0.5% – 1.0% كحد أقصى (خالٍ من الفطريات والعفن)"
         },
         {
-          "label": "الرطوبة:",
-          "value": "12% كحد أقصى"
+          "label": "محتوى الزيت العطري:",
+          "value": "2.5% – 4.5% كحد أدنى"
         },
         {
-          "label": "التعبئة:",
-          "value": "50 كجم، 25 كجم أو حسب الطلب"
+          "label": "التعبئة والتغليف:",
+          "value": "كرتون 10/20 كجم أو بالات مضغوطة 20-25 كجم"
         },
         {
-          "label": "الحد الأدنى للطلب:",
-          "value": "1 طن"
+          "label": "حمولة الحاوية:",
+          "value": "5.5–10 طن / 20FCL · 12.5–25 طن / 40HC (ميناء هاي فونغ)"
         }
       ],
       "btn_quote": "طلب عرض أسعار",
@@ -403,32 +427,36 @@
       "rating": "⭐ 4.8/5 - 45+ International Buyers",
       "specs": [
         {
+          "label": "HS Code:",
+          "value": "0909.61"
+        },
+        {
           "label": "Origin:",
           "value": "Lang Son Province, Vietnam"
         },
         {
-          "label": "Grade:",
-          "value": "Grade A (Autumn/Spring Harvest)"
+          "label": "Commercial Grades:",
+          "value": "Autumn Whole (Grade A, dia ≥ 2.5cm), Spring Whole, Broken"
         },
         {
           "label": "Moisture:",
-          "value": "13% Maximum"
+          "value": "12.5% – 13.0% max"
         },
         {
-          "label": "Broken Rate:",
-          "value": "Less than 5%"
+          "label": "Admixture:",
+          "value": "1.0% max (Broken ≤ 5%, No fungus)"
         },
         {
-          "label": "Oil Content:",
-          "value": "8-10% Anethole"
+          "label": "Essential Oil:",
+          "value": "8.5% – 11.0% min"
         },
         {
-          "label": "Packaging:",
-          "value": "10kg/20kg Cartons or Jute Bags"
+          "label": "Export Packing:",
+          "value": "Cartons (Net 5 kg / 10 kg) or PP Bags (Broken 20-25 kg)"
         },
         {
-          "label": "MOQ:",
-          "value": "1 Ton"
+          "label": "Container Load:",
+          "value": "6.5–7.5 MT / 20FCL · 15.0–16.0 MT / 40HC (Hai Phong Port)"
         }
       ],
       "btn_quote": "Request Quote",
@@ -461,32 +489,36 @@
       "rating": "⭐ 4.8/5 - Hơn 45 đối tác quốc tế tin dùng",
       "specs": [
         {
+          "label": "Mã HS:",
+          "value": "0909.61"
+        },
+        {
           "label": "Xuất xứ:",
           "value": "Tỉnh Lạng Sơn, Việt Nam"
         },
         {
-          "label": "Phân loại:",
-          "value": "Loại A (Vụ Xuân / Vụ Thu)"
+          "label": "Phẩm cấp:",
+          "value": "Hồi mùa đại tràng (Loại A, đường kính ≥ 2.5cm), Hồi xuân, Hồi vỡ"
         },
         {
           "label": "Độ ẩm:",
-          "value": "Tối đa 13%"
+          "value": "Tối đa 12.5% – 13.0%"
         },
         {
-          "label": "Tỷ lệ vỡ:",
-          "value": "Dưới 5%"
+          "label": "Tạp chất:",
+          "value": "Tối đa 1.0% (Tỷ lệ vỡ ≤ 5%, Không nấm mốc)"
         },
         {
           "label": "Hàm lượng tinh dầu:",
-          "value": "8 - 10% Anethole"
+          "value": "8.5% – 11.0% min"
         },
         {
-          "label": "Quy cách đóng gói:",
-          "value": "Thùng carton 10kg/20kg hoặc bao đay"
+          "label": "Đóng gói xuất khẩu:",
+          "value": "Thùng Carton 5 kg / 10 kg hoặc Bao PP 20-25 kg (hồi vỡ)"
         },
         {
-          "label": "MOQ:",
-          "value": "1 Tấn"
+          "label": "Định mức đóng cont:",
+          "value": "6.5–7.5 tấn / 20FCL · 15.0–16.0 tấn / 40HC (Cảng Hải Phòng)"
         }
       ],
       "btn_quote": "Nhận Báo Giá",
@@ -519,32 +551,36 @@
       "rating": "⭐ 4.8/5 - 45+ 位國際買家認可",
       "specs": [
         {
-          "label": "產地：",
-          "value": "越南諒山省"
+          "label": "HS編碼:",
+          "value": "0909.61"
         },
         {
-          "label": "等級：",
-          "value": "A級（春季 / 秋季採收）"
+          "label": "原產地:",
+          "value": "越南諒山省（Lang Son）"
         },
         {
-          "label": "水分：",
-          "value": "最高 13%"
+          "label": "出口品級:",
+          "value": "大紅秋八角（特級朵瓣 ≥ 2.5cm）、春八角、碎八角/提油料"
         },
         {
-          "label": "碎角率：",
-          "value": "小於 5%"
+          "label": "水分上限:",
+          "value": "≤ 12.5% – 13.0%"
         },
         {
-          "label": "精油含量：",
-          "value": "8 - 10% 茴香腦"
+          "label": "雜質上限:",
+          "value": "≤ 1.0%（破瓣率 ≤ 5%，無霉變）"
         },
         {
-          "label": "包裝：",
-          "value": "10kg/20kg 紙箱或麻袋"
+          "label": "揮發精油:",
+          "value": "8.5% – 11.0% min"
         },
         {
-          "label": "起訂量：",
-          "value": "1 噸"
+          "label": "包裝方式:",
+          "value": "5 kg / 10 kg 紙箱（配內膜）或 20-25 kg PP編織袋"
+        },
+        {
+          "label": "貨櫃裝載量:",
+          "value": "6.5–7.5 噸 / 20GP · 15.0–16.0 噸 / 40HC（海防港起運）"
         }
       ],
       "btn_quote": "索取報價",
@@ -577,32 +613,36 @@
       "rating": "⭐ 4.8/5 - 45+ 位国际买家认可",
       "specs": [
         {
-          "label": "产地：",
-          "value": "越南谅山省"
+          "label": "HS编码:",
+          "value": "0909.61"
         },
         {
-          "label": "等级：",
-          "value": "A级（春季 / 秋季采收）"
+          "label": "原产地:",
+          "value": "越南谅山省（Lang Son）"
         },
         {
-          "label": "水分：",
-          "value": "最高 13%"
+          "label": "出口品级:",
+          "value": "大红秋八角（特级朵瓣 ≥ 2.5cm）、春八角、碎八角/提油料"
         },
         {
-          "label": "碎角率：",
-          "value": "小于 5%"
+          "label": "水分上限:",
+          "value": "≤ 12.5% – 13.0%"
         },
         {
-          "label": "精油含量：",
-          "value": "8 - 10% 茴香脑"
+          "label": "杂质上限:",
+          "value": "≤ 1.0%（破瓣率 ≤ 5%，无霉变）"
         },
         {
-          "label": "包装：",
-          "value": "10kg/20kg 纸箱或麻袋"
+          "label": "挥发精油:",
+          "value": "8.5% – 11.0% min"
         },
         {
-          "label": "起订量：",
-          "value": "1 吨"
+          "label": "包装方式:",
+          "value": "5 kg / 10 kg 纸箱（配内膜）或 20-25 kg PP编织袋"
+        },
+        {
+          "label": "集装箱装载量:",
+          "value": "6.5–7.5 吨 / 20GP · 15.0–16.0 吨 / 40HC（海防港起运）"
         }
       ],
       "btn_quote": "索取报价",
@@ -635,24 +675,36 @@
       "rating": "⭐ 4.8/5 - 45+ अंतर्राष्ट्रीय खरीदार",
       "specs": [
         {
-          "label": "उत्पत्ति:",
-          "value": "लैंग सोन, वियतनाम"
+          "label": "HS कोड:",
+          "value": "0909.61"
         },
         {
-          "label": "ग्रेड:",
-          "value": "ग्रेड A"
+          "label": "उत्पत्ति:",
+          "value": "लैंग सोन प्रांत, वियतनाम"
+        },
+        {
+          "label": "वाणिज्यिक ग्रेड:",
+          "value": "ऑटम होल (ग्रेड A, व्यास ≥ 2.5cm), स्प्रिंग होल, ब्रोकन"
         },
         {
           "label": "नमी:",
-          "value": "अधिकतम 13%"
+          "value": "12.5% – 13.0% अधिकतम"
         },
         {
-          "label": "टूटी दर:",
-          "value": "5% से कम"
+          "label": "अशुद्धता:",
+          "value": "1.0% अधिकतम (फंगस-मुक्त)"
         },
         {
-          "label": "MOQ:",
-          "value": "1 टन"
+          "label": "आवश्यक तेल:",
+          "value": "8.5% – 11.0% न्यूनतम"
+        },
+        {
+          "label": "पैकिंग:",
+          "value": "5 किग्रा / 10 किग्रा कार्टन या 20-25 किग्रा पीपी बैग"
+        },
+        {
+          "label": "कंटेनर लोड:",
+          "value": "6.5–7.5 MT / 20FCL · 15.0–16.0 MT / 40HC (हाई फोंग पोर्ट)"
         }
       ],
       "btn_quote": "कोटेशन का अनुरोध करें",
@@ -673,20 +725,36 @@
       "rating": "⭐ 4.8/5 - أكثر من 45 مشتري دولي",
       "specs": [
         {
-          "label": "المنشأ:",
+          "label": "رمز النظام المنسق (HS):",
+          "value": "0909.61"
+        },
+        {
+          "label": "بلد المنشأ:",
           "value": "مقاطعة لانغ سون، فيتنام"
         },
         {
-          "label": "الدرجة:",
-          "value": "الدرجة A الممتازة"
+          "label": "الدرجات التجارية:",
+          "value": "خريفي كامل (درجة A، قطر ≥ 2.5 سم)، ربيعي كامل، ومكسور"
         },
         {
-          "label": "الرطوبة:",
-          "value": "13% كحد أقصى"
+          "label": "الرطوبة القصوى:",
+          "value": "12.5% – 13.0% كحد أقصى"
         },
         {
-          "label": "الحد الأدنى للطلب:",
-          "value": "1 طن"
+          "label": "الشوائب:",
+          "value": "1.0% كحد أقصى (خالٍ تماماً من الفطريات)"
+        },
+        {
+          "label": "محتوى الزيت العطري:",
+          "value": "8.5% – 11.0% كحد أدنى"
+        },
+        {
+          "label": "التعبئة والتغليف:",
+          "value": "كرتون 5 / 10 كجم أو أكياس PP سعة 20-25 كجم"
+        },
+        {
+          "label": "حمولة الحاوية:",
+          "value": "6.5–7.5 طن / 20FCL · 15.0–16.0 طن / 40HC (ميناء هاي فونغ)"
         }
       ],
       "btn_quote": "طلب عرض أسعار",
@@ -709,28 +777,36 @@
       "rating": "⭐ 4.9/5 - 60+ International Buyers",
       "specs": [
         {
+          "label": "HS Code:",
+          "value": "0902.10 / 0902.20"
+        },
+        {
           "label": "Origin:",
-          "value": "Thai Nguyen & Moc Chau, Vietnam"
+          "value": "Northern Highlands, Vietnam"
         },
         {
-          "label": "Grade:",
-          "value": "Premium Loose Leaf / Sencha"
-        },
-        {
-          "label": "Processing:",
-          "value": "Steamed & Pan-fired"
+          "label": "Commercial Grades:",
+          "value": "OP (Orange Pekoe), Pekoe/TH101, PS & BPS / Fannings"
         },
         {
           "label": "Moisture:",
-          "value": "5-7% Maximum"
+          "value": "7.5% – 8.0% max"
         },
         {
-          "label": "Packaging:",
-          "value": "Vacuum Foil Bags, 10kg/25kg"
+          "label": "Admixture:",
+          "value": "0.5% – 1.0% max"
         },
         {
-          "label": "MOQ:",
-          "value": "500 kg"
+          "label": "Water Extract:",
+          "value": "≥ 32% – 36% min (Total Ash 4.0-6.5%)"
+        },
+        {
+          "label": "Export Packing:",
+          "value": "20-25 kg PE-lined Kraft Sacks or 30-45 kg PP Bags"
+        },
+        {
+          "label": "Container Load:",
+          "value": "10–12 MT / 20FCL · 20–24 MT / 40HC (Hai Phong Port)"
         }
       ],
       "btn_quote": "Request Quote",
@@ -751,28 +827,36 @@
       "rating": "⭐ 4.9/5 - Hơn 60 đối tác quốc tế tin dùng",
       "specs": [
         {
+          "label": "Mã HS:",
+          "value": "0902.10 / 0902.20"
+        },
+        {
           "label": "Xuất xứ:",
-          "value": "Thái Nguyên & Mộc Châu, Việt Nam"
+          "value": "Cao nguyên phía Bắc, Việt Nam"
         },
         {
-          "label": "Phân loại:",
-          "value": "Chè búp cao cấp / Sencha"
-        },
-        {
-          "label": "Chế biến:",
-          "value": "Hấp & Sao thủ công truyền thống"
+          "label": "Phẩm cấp:",
+          "value": "Trà OP (xoắn búp), Pekoe/TH101, PS & BPS / Cánh fanning"
         },
         {
           "label": "Độ ẩm:",
-          "value": "5 - 7% Tối đa"
+          "value": "Tối đa 7.5% – 8.0%"
         },
         {
-          "label": "Quy cách đóng gói:",
-          "value": "Túi hút chân không 10kg/25kg"
+          "label": "Tạp chất:",
+          "value": "Tối đa 0.5% – 1.0%"
         },
         {
-          "label": "MOQ:",
-          "value": "500 kg"
+          "label": "Chất hòa tan:",
+          "value": "≥ 32% – 36% min (Tro tổng 4.0-6.5%)"
+        },
+        {
+          "label": "Đóng gói xuất khẩu:",
+          "value": "Bao Kraft lót PE 20-25 kg hoặc Bao PP dệt 30-45 kg"
+        },
+        {
+          "label": "Định mức đóng cont:",
+          "value": "10–12 tấn / 20FCL · 20–24 tấn / 40HC (Cảng Hải Phòng)"
         }
       ],
       "btn_quote": "Nhận Báo Giá",
@@ -793,28 +877,36 @@
       "rating": "⭐ 4.9/5 - 60+ 位國際買家認可",
       "specs": [
         {
-          "label": "產地：",
-          "value": "越南太原省及木州高原"
+          "label": "HS編碼:",
+          "value": "0902.10 / 0902.20"
         },
         {
-          "label": "等級：",
-          "value": "頂級散裝茶葉 / 煎茶規格"
+          "label": "原產地:",
+          "value": "越南北部高山茶區"
         },
         {
-          "label": "工藝：",
-          "value": "傳統殺青與炒製工藝"
+          "label": "出口品級:",
+          "value": "綠茶 OP（長條整葉）、Pekoe/TH101、PS & BPS/茶末"
         },
         {
-          "label": "水分：",
-          "value": "5 - 7% 最高"
+          "label": "水分上限:",
+          "value": "≤ 7.5% – 8.0%"
         },
         {
-          "label": "包裝：",
-          "value": "鋁箔真空包裝 10kg/25kg"
+          "label": "雜質上限:",
+          "value": "≤ 0.5% – 1.0%"
         },
         {
-          "label": "起訂量：",
-          "value": "500 公斤"
+          "label": "水浸出物:",
+          "value": "≥ 32% – 36% min（總灰分 4.0-6.5%）"
+        },
+        {
+          "label": "包裝方式:",
+          "value": "20-25 kg 內襯PE多層牛皮紙袋 或 30-45 kg PP編織袋"
+        },
+        {
+          "label": "貨櫃裝載量:",
+          "value": "10–12 噸 / 20GP · 20–24 噸 / 40HC（海防港起運）"
         }
       ],
       "btn_quote": "索取報價",
@@ -835,28 +927,36 @@
       "rating": "⭐ 4.9/5 - 60+ 位国际买家认可",
       "specs": [
         {
-          "label": "产地：",
-          "value": "越南太原省及木州高原"
+          "label": "HS编码:",
+          "value": "0902.10 / 0902.20"
         },
         {
-          "label": "等级：",
-          "value": "顶级散装茶叶 / 煎茶规格"
+          "label": "原产地:",
+          "value": "越南北部高山茶区"
         },
         {
-          "label": "工艺：",
-          "value": "传统杀青与炒制工艺"
+          "label": "出口品级:",
+          "value": "绿茶 OP（长条整叶）、Pekoe/TH101、PS & BPS/茶末"
         },
         {
-          "label": "水分：",
-          "value": "5 - 7% 最高"
+          "label": "水分上限:",
+          "value": "≤ 7.5% – 8.0%"
         },
         {
-          "label": "包装：",
-          "value": "铝箔真空包装 10kg/25kg"
+          "label": "杂质上限:",
+          "value": "≤ 0.5% – 1.0%"
         },
         {
-          "label": "起订量：",
-          "value": "500 公斤"
+          "label": "水浸出物:",
+          "value": "≥ 32% – 36% min（总灰分 4.0-6.5%）"
+        },
+        {
+          "label": "包装方式:",
+          "value": "20-25 kg 内衬PE多层牛皮纸袋 或 30-45 kg PP编织袋"
+        },
+        {
+          "label": "集装箱装载量:",
+          "value": "10–12 吨 / 20GP · 20–24 吨 / 40HC（海防港起运）"
         }
       ],
       "btn_quote": "索取报价",
@@ -877,16 +977,36 @@
       "rating": "⭐ 4.9/5 - 60+ खरीदार",
       "specs": [
         {
+          "label": "HS कोड:",
+          "value": "0902.10 / 0902.20"
+        },
+        {
           "label": "उत्पत्ति:",
-          "value": "थाई गुयेन, वियतनाम"
+          "value": "उत्तरी हाईलैंड्स, वियतनाम"
         },
         {
-          "label": "ग्रेड:",
-          "value": "प्रीमियम पत्ती"
+          "label": "वाणिज्यिक ग्रेड:",
+          "value": "OP (ऑरेंज पेको), Pekoe/TH101, PS व BPS"
         },
         {
-          "label": "MOQ:",
-          "value": "500 kg"
+          "label": "नमी:",
+          "value": "7.5% – 8.0% अधिकतम"
+        },
+        {
+          "label": "अशुद्धता:",
+          "value": "0.5% – 1.0% अधिकतम"
+        },
+        {
+          "label": "जल-घुलनशील अर्क:",
+          "value": "≥ 32% – 36% (राख 4.0-6.5%)"
+        },
+        {
+          "label": "पैकिंग:",
+          "value": "20-25 किग्रा क्राफ्ट पेपर बैग या 30-45 किग्रा पीपी बैग"
+        },
+        {
+          "label": "कंटेनर लोड:",
+          "value": "10–12 MT / 20FCL · 20–24 MT / 40HC (हाई फोंग पोर्ट)"
         }
       ],
       "btn_quote": "कोटेशन का अनुरोध करें",
@@ -907,16 +1027,36 @@
       "rating": "⭐ 4.9/5 - أكثر من 60 مشتري",
       "specs": [
         {
-          "label": "المنشأ:",
-          "value": "تاي نغوين، فيتنام"
+          "label": "رمز النظام المنسق (HS):",
+          "value": "0902.10 / 0902.20"
         },
         {
-          "label": "الدرجة:",
-          "value": "أوراق شاي فاخرة"
+          "label": "بلد المنشأ:",
+          "value": "مرتفعات شمال فيتنام"
         },
         {
-          "label": "الحد الأدنى:",
-          "value": "500 كجم"
+          "label": "الدرجات التجارية:",
+          "value": "OP (أوراق كاملة)، Pekoe/TH101، وPS وBPS"
+        },
+        {
+          "label": "الرطوبة القصوى:",
+          "value": "7.5% – 8.0% كحد أقصى"
+        },
+        {
+          "label": "الشوائب:",
+          "value": "0.5% – 1.0% كحد أقصى"
+        },
+        {
+          "label": "المستخلص المائي:",
+          "value": "≥ 32% – 36% كحد أدنى"
+        },
+        {
+          "label": "التعبئة والتغليف:",
+          "value": "أكياس كرافت مبطنة 20-25 كجم أو أكياس PP سعة 30-45 كجم"
+        },
+        {
+          "label": "حمولة الحاوية:",
+          "value": "10–12 طن / 20FCL · 20–24 طن / 40HC (ميناء هاي فونغ)"
         }
       ],
       "btn_quote": "طلب عرض أسعار",
@@ -939,28 +1079,36 @@
       "rating": "⭐ 4.8/5 - 55+ International Buyers",
       "specs": [
         {
+          "label": "HS Code:",
+          "value": "0902.30 / 0902.40"
+        },
+        {
           "label": "Origin:",
-          "value": "Yen Bai & Lam Dong, Vietnam"
+          "value": "Northern Highlands & Lam Dong, Vietnam"
         },
         {
-          "label": "Grade:",
-          "value": "OP, BOP, CTC, Orthodox"
-        },
-        {
-          "label": "Fermentation:",
-          "value": "100% Fully Oxidized"
+          "label": "Commercial Grades:",
+          "value": "Orthodox OP / FBOP (Golden Tips), Pekoe/PS/BPS, CTC (BP1, PF1, PD)"
         },
         {
           "label": "Moisture:",
-          "value": "6.5% Maximum"
+          "value": "7.5% – 8.0% max"
         },
         {
-          "label": "Packaging:",
-          "value": "Multiwall Paper Sacks with Foil Liner"
+          "label": "Admixture:",
+          "value": "0.5% – 1.0% max"
         },
         {
-          "label": "MOQ:",
-          "value": "1 Ton"
+          "label": "Water Extract:",
+          "value": "≥ 32% – 38% min (Fully Oxidized 90-100%)"
+        },
+        {
+          "label": "Export Packing:",
+          "value": "20-25 kg Multi-wall Kraft Sacks or 30-45 kg PP/PE Bags"
+        },
+        {
+          "label": "Container Load:",
+          "value": "10–13 MT / 20FCL · 21–25 MT / 40HC (Hai Phong Port)"
         }
       ],
       "btn_quote": "Request Quote",
@@ -981,28 +1129,36 @@
       "rating": "⭐ 4.8/5 - Hơn 55 đối tác quốc tế tin dùng",
       "specs": [
         {
+          "label": "Mã HS:",
+          "value": "0902.30 / 0902.40"
+        },
+        {
           "label": "Xuất xứ:",
-          "value": "Yên Bái & Lâm Đồng, Việt Nam"
+          "value": "Cao nguyên phía Bắc & Lâm Đồng, Việt Nam"
         },
         {
-          "label": "Phân loại:",
-          "value": "OP, BOP, CTC, Chè đen truyền thống"
-        },
-        {
-          "label": "Lên men:",
-          "value": "Lên men toàn phần 100%"
+          "label": "Phẩm cấp:",
+          "value": "Orthodox OP / FBOP (búp vàng), Pekoe/PS/BPS, Trà CTC (BP1, PF1, PD)"
         },
         {
           "label": "Độ ẩm:",
-          "value": "Tối đa 6.5%"
+          "value": "Tối đa 7.5% – 8.0%"
         },
         {
-          "label": "Quy cách đóng gói:",
-          "value": "Bao giấy kraft nhiều lớp có lót màng nhôm"
+          "label": "Tạp chất:",
+          "value": "Tối đa 0.5% – 1.0%"
         },
         {
-          "label": "MOQ:",
-          "value": "1 Tấn"
+          "label": "Chất hòa tan:",
+          "value": "≥ 32% – 38% min (Lên men toàn phần 90-100%)"
+        },
+        {
+          "label": "Đóng gói xuất khẩu:",
+          "value": "Bao Kraft nhiều lớp lót PE 20-25 kg hoặc Bao PP/PE 30-45 kg"
+        },
+        {
+          "label": "Định mức đóng cont:",
+          "value": "10–13 tấn / 20FCL · 21–25 tấn / 40HC (Cảng Hải Phòng)"
         }
       ],
       "btn_quote": "Nhận Báo Giá",
@@ -1023,28 +1179,36 @@
       "rating": "⭐ 4.8/5 - 55+ 位國際買家認可",
       "specs": [
         {
-          "label": "產地：",
-          "value": "越南安沛省及林同省"
+          "label": "HS編碼:",
+          "value": "0902.30 / 0902.40"
         },
         {
-          "label": "等級：",
-          "value": "OP、BOP、CTC 及傳統條索紅茶"
+          "label": "原產地:",
+          "value": "越南北部高山茶區與林同省"
         },
         {
-          "label": "發酵度：",
-          "value": "100% 全發酵"
+          "label": "出口品級:",
+          "value": "工夫紅茶 OP/FBOP（金毫特級）、Pekoe/PS/BPS、CTC紅碎茶（BP1/PF1/PD）"
         },
         {
-          "label": "水分：",
-          "value": "最高 6.5%"
+          "label": "水分上限:",
+          "value": "≤ 7.5% – 8.0%"
         },
         {
-          "label": "包裝：",
-          "value": "多層牛皮紙袋內襯鋁箔"
+          "label": "雜質上限:",
+          "value": "≤ 0.5% – 1.0%"
         },
         {
-          "label": "起訂量：",
-          "value": "1 噸"
+          "label": "水浸出物:",
+          "value": "≥ 32% – 38% min（發酵度 90-100%）"
+        },
+        {
+          "label": "包裝方式:",
+          "value": "20-25 kg 多層內襯PE牛皮紙袋 或 30-45 kg PP/PE袋"
+        },
+        {
+          "label": "貨櫃裝載量:",
+          "value": "10–13 噸 / 20GP · 21–25 噸 / 40HC（海防港起運）"
         }
       ],
       "btn_quote": "索取報價",
@@ -1065,28 +1229,36 @@
       "rating": "⭐ 4.8/5 - 55+ 位国际买家认可",
       "specs": [
         {
-          "label": "产地：",
-          "value": "越南安沛省及林同省"
+          "label": "HS编码:",
+          "value": "0902.30 / 0902.40"
         },
         {
-          "label": "等级：",
-          "value": "OP、BOP、CTC 及传统条索红茶"
+          "label": "原产地:",
+          "value": "越南北部高山茶区与林同省"
         },
         {
-          "label": "发酵度：",
-          "value": "100% 全发酵"
+          "label": "出口品级:",
+          "value": "工夫红茶 OP/FBOP（金毫特级）、Pekoe/PS/BPS、CTC红碎茶（BP1/PF1/PD）"
         },
         {
-          "label": "水分：",
-          "value": "最高 6.5%"
+          "label": "水分上限:",
+          "value": "≤ 7.5% – 8.0%"
         },
         {
-          "label": "包装：",
-          "value": "多层牛皮纸袋内衬铝箔"
+          "label": "杂质上限:",
+          "value": "≤ 0.5% – 1.0%"
         },
         {
-          "label": "起订量：",
-          "value": "1 吨"
+          "label": "水浸出物:",
+          "value": "≥ 32% – 38% min（发酵度 90-100%）"
+        },
+        {
+          "label": "包装方式:",
+          "value": "20-25 kg 多层内衬PE牛皮纸袋 或 30-45 kg PP/PE袋"
+        },
+        {
+          "label": "集装箱装载量:",
+          "value": "10–13 吨 / 20GP · 21–25 吨 / 40HC（海防港起运）"
         }
       ],
       "btn_quote": "索取报价",
@@ -1107,12 +1279,36 @@
       "rating": "⭐ 4.8/5 - 55+ खरीदार",
       "specs": [
         {
-          "label": "उत्पत्ति:",
-          "value": "वियतनाम"
+          "label": "HS कोड:",
+          "value": "0902.30 / 0902.40"
         },
         {
-          "label": "MOQ:",
-          "value": "1 टन"
+          "label": "उत्पत्ति:",
+          "value": "उत्तरी हाईलैंड्स व लाम डोंग, वियतनाम"
+        },
+        {
+          "label": "वाणिज्यिक ग्रेड:",
+          "value": "ऑर्थोडॉक्स OP / FBOP, Pekoe/PS/BPS, CTC (BP1, PF1, PD)"
+        },
+        {
+          "label": "नमी:",
+          "value": "7.5% – 8.0% अधिकतम"
+        },
+        {
+          "label": "अशुद्धता:",
+          "value": "0.5% – 1.0% अधिकतम"
+        },
+        {
+          "label": "जल-घुलनशील अर्क:",
+          "value": "≥ 32% – 38% (पूर्ण ऑक्सीकृत 90-100%)"
+        },
+        {
+          "label": "पैकिंग:",
+          "value": "20-25 किग्रा क्राफ्ट पेपर बैग या 30-45 किग्रा पीपी बैग"
+        },
+        {
+          "label": "कंटेनर लोड:",
+          "value": "10–13 MT / 20FCL · 21–25 MT / 40HC (हाई फोंग पोर्ट)"
         }
       ],
       "btn_quote": "कोटेशन का अनुरोध करें",
@@ -1133,12 +1329,36 @@
       "rating": "⭐ 4.8/5 - أكثر من 55 مشتري",
       "specs": [
         {
-          "label": "المنشأ:",
-          "value": "فيتنام"
+          "label": "رمز النظام المنسق (HS):",
+          "value": "0902.30 / 0902.40"
         },
         {
-          "label": "الحد الأدنى:",
-          "value": "1 طن"
+          "label": "بلد المنشأ:",
+          "value": "مرتفعات شمال فيتنام ولام دونغ"
+        },
+        {
+          "label": "الدرجات التجارية:",
+          "value": "أرثوذكس OP / FBOP، وPekoe/PS/BPS، وCTC (BP1, PF1, PD)"
+        },
+        {
+          "label": "الرطوبة القصوى:",
+          "value": "7.5% – 8.0% كحد أقصى"
+        },
+        {
+          "label": "الشوائب:",
+          "value": "0.5% – 1.0% كحد أقصى"
+        },
+        {
+          "label": "المستخلص المائي:",
+          "value": "≥ 32% – 38% كحد أدنى (مؤكسد بالكامل 90-100%)"
+        },
+        {
+          "label": "التعبئة والتغليف:",
+          "value": "أكياس كرافت مبطنة 20-25 كجم أو أكياس PP/PE سعة 30-45 كجم"
+        },
+        {
+          "label": "حمولة الحاوية:",
+          "value": "10–13 طن / 20FCL · 21–25 طن / 40HC (ميناء هاي فونغ)"
         }
       ],
       "btn_quote": "طلب عرض أسعار",
@@ -1161,32 +1381,40 @@
       "rating": "⭐ 4.7/5 - 35+ Distilleries & Buyers",
       "specs": [
         {
+          "label": "HS Code:",
+          "value": "0906.19 / 1211.90"
+        },
+        {
           "label": "Origin:",
           "value": "Yen Bai Province, Vietnam"
         },
         {
-          "label": "Processing:",
-          "value": "Naturally Sun-dried & Shade-cured"
-        },
-        {
-          "label": "Oil Content:",
-          "value": "1.2 - 2.0% Essential Oil"
-        },
-        {
-          "label": "Eugenol Content:",
-          "value": "70-85% in Oil"
+          "label": "Commercial Grades:",
+          "value": "Whole Dried Cinnamon Leaves (Sun-dried & Shed-cured)"
         },
         {
           "label": "Moisture:",
-          "value": "12% Maximum"
+          "value": "12.0% – 13.0% max"
         },
         {
-          "label": "Packaging:",
-          "value": "Pressed Bales (50kg) or Sacks"
+          "label": "Admixture:",
+          "value": "1.0% max (No mold)"
         },
         {
-          "label": "MOQ:",
-          "value": "2 Tons"
+          "label": "Essential Oil:",
+          "value": "1.2% – 2.0% min (Ideal for steam distillation)"
+        },
+        {
+          "label": "Condition:",
+          "value": "Clean aromatic intact leaves, optimal for cineole/cinnamaldehyde extraction"
+        },
+        {
+          "label": "Export Packing:",
+          "value": "25–50 kg High-density Hydraulic Pressed Bales"
+        },
+        {
+          "label": "Container Load:",
+          "value": "8.0–9.0 MT / 20FCL · 18.0–20.0 MT / 40HC (Hai Phong Port)"
         }
       ],
       "btn_quote": "Request Quote",
@@ -1207,32 +1435,40 @@
       "rating": "⭐ 4.7/5 - Hơn 35 nhà máy chưng cất tin dùng",
       "specs": [
         {
+          "label": "Mã HS:",
+          "value": "0906.19 / 1211.90"
+        },
+        {
           "label": "Xuất xứ:",
           "value": "Tỉnh Yên Bái, Việt Nam"
         },
         {
-          "label": "Chế biến:",
-          "value": "Phơi khô tự nhiên & ủ bóng râm"
-        },
-        {
-          "label": "Hàm lượng tinh dầu:",
-          "value": "1.2 - 2.0%"
-        },
-        {
-          "label": "Hàm lượng Eugenol:",
-          "value": "70 - 85% trong tinh dầu"
+          "label": "Phẩm cấp:",
+          "value": "Lá quế khô nguyên bản (Phơi nắng tự nhiên & ủ mát)"
         },
         {
           "label": "Độ ẩm:",
-          "value": "Tối đa 12%"
+          "value": "Tối đa 12.0% – 13.0%"
         },
         {
-          "label": "Quy cách đóng gói:",
-          "value": "Ép kiện 50kg hoặc đóng bao"
+          "label": "Tạp chất:",
+          "value": "Tối đa 1.0% (Không ẩm mốc)"
         },
         {
-          "label": "MOQ:",
-          "value": "2 Tấn"
+          "label": "Hàm lượng tinh dầu:",
+          "value": "1.2% – 2.0% min (Chuyên dụng chưng cất tinh dầu)"
+        },
+        {
+          "label": "Ngoại quan:",
+          "value": "Lá sạch, thơm nồng đặc trưng, tỷ lệ tinh dầu cao"
+        },
+        {
+          "label": "Đóng gói xuất khẩu:",
+          "value": "Kiện ép thủy lực mật độ cao 25–50 kg"
+        },
+        {
+          "label": "Định mức đóng cont:",
+          "value": "8.0–9.0 tấn / 20FCL · 18.0–20.0 tấn / 40HC (Cảng Hải Phòng)"
         }
       ],
       "btn_quote": "Nhận Báo Giá",
@@ -1253,32 +1489,40 @@
       "rating": "⭐ 4.7/5 - 35+ 家精油廠與買家認可",
       "specs": [
         {
-          "label": "產地：",
-          "value": "越南安沛省"
+          "label": "HS編碼:",
+          "value": "0906.19 / 1211.90"
         },
         {
-          "label": "加工：",
-          "value": "天然陽光晾曬與陰乾"
+          "label": "原產地:",
+          "value": "越南安沛省（Yen Bai）"
         },
         {
-          "label": "含油率：",
-          "value": "1.2 - 2.0% 精油含量"
+          "label": "出口品級:",
+          "value": "純天然全乾肉桂葉（自然日曬與陰乾結合）"
         },
         {
-          "label": "丁香酚含量：",
-          "value": "精油中含 70 - 85% Eugenol"
+          "label": "水分上限:",
+          "value": "≤ 12.0% – 13.0%"
         },
         {
-          "label": "水分：",
-          "value": "最高 12%"
+          "label": "雜質上限:",
+          "value": "≤ 1.0%（潔淨無霉變）"
         },
         {
-          "label": "包裝：",
-          "value": "50公斤壓捆或大袋包裝"
+          "label": "揮發精油:",
+          "value": "1.2% – 2.0% min（專用水蒸氣蒸餾提油）"
         },
         {
-          "label": "起訂量：",
-          "value": "2 噸"
+          "label": "品質狀態:",
+          "value": "葉片完整潔淨、香氣濃郁，工業提油高出油率"
+        },
+        {
+          "label": "包裝方式:",
+          "value": "25–50 kg 高密液壓液壓緊壓包"
+        },
+        {
+          "label": "貨櫃裝載量:",
+          "value": "8.0–9.0 噸 / 20GP · 18.0–20.0 噸 / 40HC（海防港起運）"
         }
       ],
       "btn_quote": "索取報價",
@@ -1299,32 +1543,40 @@
       "rating": "⭐ 4.7/5 - 35+ 家精油厂与买家认可",
       "specs": [
         {
-          "label": "产地：",
-          "value": "越南安沛省"
+          "label": "HS编码:",
+          "value": "0906.19 / 1211.90"
         },
         {
-          "label": "加工：",
-          "value": "天然阳光晾晒与阴干"
+          "label": "原产地:",
+          "value": "越南安沛省（Yen Bai）"
         },
         {
-          "label": "含油率：",
-          "value": "1.2 - 2.0% 精油含量"
+          "label": "出口品级:",
+          "value": "纯天然全干肉桂叶（自然日晒与阴干结合）"
         },
         {
-          "label": "丁香酚含量：",
-          "value": "精油中含 70 - 85% Eugenol"
+          "label": "水分上限:",
+          "value": "≤ 12.0% – 13.0%"
         },
         {
-          "label": "水分：",
-          "value": "最高 12%"
+          "label": "杂质上限:",
+          "value": "≤ 1.0%（洁净无霉变）"
         },
         {
-          "label": "包装：",
-          "value": "50公斤压捆或大袋包装"
+          "label": "挥发精油:",
+          "value": "1.2% – 2.0% min（专用水蒸气蒸馏提油）"
         },
         {
-          "label": "起订量：",
-          "value": "2 吨"
+          "label": "品质状态:",
+          "value": "叶片完整洁净、香气浓郁，工业提油高出油率"
+        },
+        {
+          "label": "包装方式:",
+          "value": "25–50 kg 高密液压液压紧压包"
+        },
+        {
+          "label": "集装箱装载量:",
+          "value": "8.0–9.0 吨 / 20GP · 18.0–20.0 吨 / 40HC（海防港起运）"
         }
       ],
       "btn_quote": "索取报价",
@@ -1345,12 +1597,40 @@
       "rating": "⭐ 4.7/5 - 35+ खरीदार",
       "specs": [
         {
-          "label": "उत्पत्ति:",
-          "value": "वियतनाम"
+          "label": "HS कोड:",
+          "value": "0906.19 / 1211.90"
         },
         {
-          "label": "MOQ:",
-          "value": "2 टन"
+          "label": "उत्पत्ति:",
+          "value": "येन बाई प्रांत, वियतनाम"
+        },
+        {
+          "label": "वाणिज्यिक ग्रेड:",
+          "value": "सूखे तेजपत्ता/दालचीनी पत्ते (भाप आसवन हेतु)"
+        },
+        {
+          "label": "नमी:",
+          "value": "12.0% – 13.0% अधिकतम"
+        },
+        {
+          "label": "अशुद्धता:",
+          "value": "1.0% अधिकतम (फंगस-मुक्त)"
+        },
+        {
+          "label": "आवश्यक तेल:",
+          "value": "1.2% – 2.0% न्यूनतम"
+        },
+        {
+          "label": "स्थिति:",
+          "value": "साफ साबुत सुगंधित पत्ते"
+        },
+        {
+          "label": "पैकिंग:",
+          "value": "25–50 किग्रा हाइड्रोलिक रूप से संपीड़ित गांठ"
+        },
+        {
+          "label": "कंटेनर लोड:",
+          "value": "8.0–9.0 MT / 20FCL · 18.0–20.0 MT / 40HC (हाई फोंग)"
         }
       ],
       "btn_quote": "कोटेशन का अनुरोध करें",
@@ -1371,12 +1651,40 @@
       "rating": "⭐ 4.7/5 - أكثر من 35 مشتري",
       "specs": [
         {
-          "label": "المنشأ:",
-          "value": "فيتنام"
+          "label": "رمز النظام المنسق (HS):",
+          "value": "0906.19 / 1211.90"
         },
         {
-          "label": "الحد الأدنى:",
-          "value": "2 طن"
+          "label": "بلد المنشأ:",
+          "value": "مقاطعة ين باي، فيتنام"
+        },
+        {
+          "label": "الدرجات التجارية:",
+          "value": "أوراق قرفة مجففة كاملة (لاستخلاص الزيوت العطرية)"
+        },
+        {
+          "label": "الرطوبة القصوى:",
+          "value": "12.0% – 13.0% كحد أقصى"
+        },
+        {
+          "label": "الشوائب:",
+          "value": "1.0% كحد أقصى (خالٍ من العفن)"
+        },
+        {
+          "label": "محتوى الزيت العطري:",
+          "value": "1.2% – 2.0% كحد أدنى (مثالي للتقطير)"
+        },
+        {
+          "label": "حالة المنتج:",
+          "value": "أوراق نظيفة ذات رائحة عطرية نفاذة"
+        },
+        {
+          "label": "التعبئة والتغليف:",
+          "value": "بالات مضغوطة هيدروليكياً 25–50 كجم"
+        },
+        {
+          "label": "حمولة الحاوية:",
+          "value": "8.0–9.0 طن / 20FCL · 18.0–20.0 طن / 40HC (ميناء هاي فونغ)"
         }
       ],
       "btn_quote": "طلب عرض أسعار",
@@ -1399,28 +1707,40 @@
       "rating": "⭐ 4.6/5 - 40+ Decor & Wholesale Buyers",
       "specs": [
         {
+          "label": "HS Code:",
+          "value": "0906.19"
+        },
+        {
           "label": "Origin:",
           "value": "Yen Bai Province, Vietnam"
         },
         {
-          "label": "Length:",
-          "value": "30cm - 100cm (Customizable)"
+          "label": "Commercial Grades:",
+          "value": "Diagonal-Sliced Twigs (Gui Zhi Pian), Natural Branches, Round Cuts"
         },
         {
-          "label": "Diameter:",
-          "value": "1.0cm - 3.5cm"
+          "label": "Moisture:",
+          "value": "12.5% max"
         },
         {
-          "label": "Aroma:",
-          "value": "Natural Cinnamon Fragrance"
+          "label": "Admixture:",
+          "value": "1.0% max (No mold)"
         },
         {
-          "label": "Packaging:",
-          "value": "Bundles in Cartons or Crates"
+          "label": "Essential Oil:",
+          "value": "1.2% – 2.2% min"
         },
         {
-          "label": "MOQ:",
-          "value": "500 kg"
+          "label": "Dimensions:",
+          "value": "Thickness 1–3 mm, Diameter 5–25 mm (uniform machine slice)"
+        },
+        {
+          "label": "Export Packing:",
+          "value": "25 kg PP woven bag or 10 kg Carton"
+        },
+        {
+          "label": "Container Load:",
+          "value": "9.0–10.0 MT / 20FCL · 22.0–24.0 MT / 40HC (Hai Phong Port)"
         }
       ],
       "btn_quote": "Request Quote",
@@ -1441,28 +1761,40 @@
       "rating": "⭐ 4.6/5 - Hơn 40 đối tác trang trí & quà tặng tin dùng",
       "specs": [
         {
+          "label": "Mã HS:",
+          "value": "0906.19"
+        },
+        {
           "label": "Xuất xứ:",
           "value": "Tỉnh Yên Bái, Việt Nam"
         },
         {
-          "label": "Chiều dài:",
-          "value": "30cm - 100cm (Theo yêu cầu)"
+          "label": "Phẩm cấp:",
+          "value": "Quế chi cắt lát vát (Quế chi phiến), Cành tự nhiên, Cắt khúc tròn"
         },
         {
-          "label": "Đường kính:",
-          "value": "1.0cm - 3.5cm"
+          "label": "Độ ẩm:",
+          "value": "Tối đa 12.5%"
         },
         {
-          "label": "Hương thơm:",
-          "value": "Hương quế tự nhiên lâu phai"
+          "label": "Tạp chất:",
+          "value": "Tối đa 1.0% (Không nấm mốc)"
         },
         {
-          "label": "Quy cách đóng gói:",
-          "value": "Bó trong thùng carton hoặc kiện gỗ"
+          "label": "Hàm lượng tinh dầu:",
+          "value": "1.2% – 2.2% min"
         },
         {
-          "label": "MOQ:",
-          "value": "500 kg"
+          "label": "Kích thước:",
+          "value": "Dày 1–3 mm, Đường kính 5–25 mm (cắt máy đều đẹp)"
+        },
+        {
+          "label": "Đóng gói xuất khẩu:",
+          "value": "Bao PP dệt 25 kg hoặc Thùng Carton 10 kg"
+        },
+        {
+          "label": "Định mức đóng cont:",
+          "value": "9.0–10.0 tấn / 20FCL · 22.0–24.0 tấn / 40HC (Cảng Hải Phòng)"
         }
       ],
       "btn_quote": "Nhận Báo Giá",
@@ -1483,28 +1815,40 @@
       "rating": "⭐ 4.6/5 - 40+ 家花藝與家居裝飾買家認可",
       "specs": [
         {
-          "label": "產地：",
-          "value": "越南安沛省"
+          "label": "HS編碼:",
+          "value": "0906.19"
         },
         {
-          "label": "長度：",
-          "value": "30公分 - 100公分（可客製）"
+          "label": "原產地:",
+          "value": "越南安沛省（Yen Bai）"
         },
         {
-          "label": "直徑：",
-          "value": "1.0公分 - 3.5公分"
+          "label": "出口品級:",
+          "value": "機器斜切桂枝片（特選中藥飲片級）、天然桂枝條、圓切節"
         },
         {
-          "label": "香氣：",
-          "value": "持久天然肉桂暖香"
+          "label": "水分上限:",
+          "value": "≤ 12.5%"
         },
         {
-          "label": "包裝：",
-          "value": "打捆裝入紙箱或木箱"
+          "label": "雜質上限:",
+          "value": "≤ 1.0%（潔淨無霉變）"
         },
         {
-          "label": "起訂量：",
-          "value": "500 公斤"
+          "label": "揮發精油:",
+          "value": "1.2% – 2.2% min"
+        },
+        {
+          "label": "規格尺寸:",
+          "value": "厚度 1–3 mm，直徑 5–25 mm（機械斜切均勻）"
+        },
+        {
+          "label": "包裝方式:",
+          "value": "25 kg PP編織袋 或 10 kg 紙箱"
+        },
+        {
+          "label": "貨櫃裝載量:",
+          "value": "9.0–10.0 噸 / 20GP · 22.0–24.0 噸 / 40HC（海防港起運）"
         }
       ],
       "btn_quote": "索取報價",
@@ -1525,28 +1869,40 @@
       "rating": "⭐ 4.6/5 - 40+ 家花艺与家居装饰买家认可",
       "specs": [
         {
-          "label": "产地：",
-          "value": "越南安沛省"
+          "label": "HS编码:",
+          "value": "0906.19"
         },
         {
-          "label": "长度：",
-          "value": "30厘米 - 100厘米（可定制）"
+          "label": "原产地:",
+          "value": "越南安沛省（Yen Bai）"
         },
         {
-          "label": "直径：",
-          "value": "1.0厘米 - 3.5厘米"
+          "label": "出口品级:",
+          "value": "机器斜切桂枝片（特选中药饮片级）、天然桂枝条、圆切节"
         },
         {
-          "label": "香气：",
-          "value": "持久天然肉桂暖香"
+          "label": "水分上限:",
+          "value": "≤ 12.5%"
         },
         {
-          "label": "包装：",
-          "value": "打捆装入纸箱或木箱"
+          "label": "杂质上限:",
+          "value": "≤ 1.0%（洁净无霉变）"
         },
         {
-          "label": "起订量：",
-          "value": "500 公斤"
+          "label": "挥发精油:",
+          "value": "1.2% – 2.2% min"
+        },
+        {
+          "label": "规格尺寸:",
+          "value": "厚度 1–3 mm，直径 5–25 mm（机械斜切均匀）"
+        },
+        {
+          "label": "包装方式:",
+          "value": "25 kg PP编织袋 或 10 kg 纸箱"
+        },
+        {
+          "label": "集装箱装载量:",
+          "value": "9.0–10.0 吨 / 20GP · 22.0–24.0 吨 / 40HC（海防港起运）"
         }
       ],
       "btn_quote": "索取报价",
@@ -1567,12 +1923,40 @@
       "rating": "⭐ 4.6/5 - 40+ खरीदार",
       "specs": [
         {
-          "label": "उत्पत्ति:",
-          "value": "वियतनाम"
+          "label": "HS कोड:",
+          "value": "0906.19"
         },
         {
-          "label": "MOQ:",
-          "value": "500 kg"
+          "label": "उत्पत्ति:",
+          "value": "येन बाई प्रांत, वियतनाम"
+        },
+        {
+          "label": "वाणिज्यिक ग्रेड:",
+          "value": "तिरछी कटी टहनियाँ (Gui Zhi Pian), प्राकृतिक शाखाएं"
+        },
+        {
+          "label": "नमी:",
+          "value": "12.5% अधिकतम"
+        },
+        {
+          "label": "अशुद्धता:",
+          "value": "1.0% अधिकतम (फंगस-मुक्त)"
+        },
+        {
+          "label": "आवश्यक तेल:",
+          "value": "1.2% – 2.2% न्यूनतम"
+        },
+        {
+          "label": "आकार:",
+          "value": "मोटाई 1–3 मिमी, व्यास 5–25 मिमी"
+        },
+        {
+          "label": "पैकिंग:",
+          "value": "25 किग्रा पीपी बैग या 10 किग्रा कार्टन"
+        },
+        {
+          "label": "कंटेनर लोड:",
+          "value": "9.0–10.0 MT / 20FCL · 22.0–24.0 MT / 40HC (हाई फोंग)"
         }
       ],
       "btn_quote": "कोटेशन का अनुरोध करें",
@@ -1593,12 +1977,40 @@
       "rating": "⭐ 4.6/5 - أكثر من 40 مشتري",
       "specs": [
         {
-          "label": "المنشأ:",
-          "value": "فيتنام"
+          "label": "رمز النظام المنسق (HS):",
+          "value": "0906.19"
         },
         {
-          "label": "الحد الأدنى:",
-          "value": "500 كجم"
+          "label": "بلد المنشأ:",
+          "value": "مقاطعة ين باي، فيتنام"
+        },
+        {
+          "label": "الدرجات التجارية:",
+          "value": "أغصان مقطعة قطرياً (Gui Zhi Pian)، أغصان طبيعية"
+        },
+        {
+          "label": "الرطوبة القصوى:",
+          "value": "12.5% كحد أقصى"
+        },
+        {
+          "label": "الشوائب:",
+          "value": "1.0% كحد أقصى (خالٍ من العفن)"
+        },
+        {
+          "label": "محتوى الزيت العطري:",
+          "value": "1.2% – 2.2% كحد أدنى"
+        },
+        {
+          "label": "الأبعاد:",
+          "value": "السماكة 1–3 مم، القطر 5–25 مم"
+        },
+        {
+          "label": "التعبئة والتغليف:",
+          "value": "أكياس PP منسوجة سعة 25 كجم أو كرتون 10 كجم"
+        },
+        {
+          "label": "حمولة الحاوية:",
+          "value": "9.0–10.0 طن / 20FCL · 22.0–24.0 طن / 40HC (ميناء هاي فونغ)"
         }
       ],
       "btn_quote": "طلب عرض أسعار",

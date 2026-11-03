@@ -288,122 +288,355 @@
     </section>
 
     <!-- Products Section -->
+        <!-- Classified Export Products Section -->
     <section id="products" class="products-section">
         <div class="container">
             <h2 class="section-title" data-i18n="products.title">Our Export Products</h2>
-            <div class="products-grid">
-                <!-- Vietnamese Cinnamon -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/cinnamon.jpg" alt="Vietnamese Cinnamon" width="1280" height="960" loading="lazy" decoding="async">
-                        <div class="product-overlay">
-                            <a href="pages/products/cinnamon.html" class="view-details-btn" data-i18n="products.view_details">View Details</a>
+            <p id="classifiedCatalogSubtitle" class="classified-catalog-subtitle">Classified commercial export grades with full technical specifications: moisture, admixture, essential oil / water extract, export packing, and 20FCL / 40HC container loadability from Hai Phong Port.</p>
+            <div id="classifiedCatalogTabs" class="classified-catalog-tabs" role="tablist">
+                <button type="button" class="catalog-tab-btn active" data-cat="all">All Export Grades (12)</button>
+                <button type="button" class="catalog-tab-btn" data-cat="cinnamon">Cassia Cinnamon (7)</button>
+                <button type="button" class="catalog-tab-btn" data-cat="anise">Star Aniseed (3)</button>
+                <button type="button" class="catalog-tab-btn" data-cat="tea">Vietnamese Tea (2)</button>
+            </div>
+            <div id="classifiedCatalogGrid" class="classified-catalog-grid">
+                <!-- Whole / Tube Cassia (Rolled Cinnamon) -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-gallery/cinnamon-rolled-bundles.jpg" alt="Whole / Tube Cassia (Rolled Cinnamon)" width="1600" height="901" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.11</span>
+                        <span class="classified-grade-badge">Flagship</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Whole / Tube Cassia (Rolled Cinnamon) — 5.5–6.0 MT / 20FCL · 12.5–13.5 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai, Vietnam</div>
+                        <h3 class="classified-card-title">Whole / Tube Cassia (Rolled Cinnamon)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">13.5% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 2.5% – 4.5% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Length 30–45 cm; Thickness ≥ 2.2 mm; Natural color (skin removed optional), no fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Cartons (Net 10 kg / 20 kg) or customized</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">5.5–6.0 MT / 20FCL · 12.5–13.5 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('tube-cassia')">Request Quote</button>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 data-i18n="products.cinnamon.title">Vietnamese Cinnamon</h3>
-                        <p data-i18n="products.cinnamon.desc">Premium quality cinnamon sticks, chips, split, and powder</p>
-                        <div class="product-specs">
-                            <span class="spec-tag">Grade A-C</span>
-                            <span class="spec-tag">Yen Bai Origin</span>
+                </article>
+                <!-- Cigarette / Finger Cassia (Scraped or Natural) -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-gallery/cinnamon-scraped-sticks.jpg" alt="Cigarette / Finger Cassia (Scraped or Natural)" width="1600" height="901" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.11</span>
+                        <span class="classified-grade-badge">Best Seller</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Cigarette / Finger Cassia (Scraped or Natural) — 7.5–8.0 MT / 20FCL · 17.5 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai, Vietnam</div>
+                        <h3 class="classified-card-title">Cigarette / Finger Cassia (Scraped or Natural)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">13.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">0.5% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 2.5% – 4.5% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Length 8, 10, 15, 20 cm; Smooth touch, tight roll, natural yellow-brown, no fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Cartons (Net 10 kg or 20 kg) or customized</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">7.5–8.0 MT / 20FCL · 17.5 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('cigarette-cassia')">Request Quote</button>
                         </div>
                     </div>
-                </div>
-
-                <!-- Cinnamon Leaves -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/cinnamon-leaves.jpg" alt="Cinnamon Leaves" width="1618" height="787" loading="lazy" decoding="async">
-                        <div class="product-overlay">
-                            <a href="pages/products/cinnamon-leaves.html" class="view-details-btn" data-i18n="products.view_details">View Details</a>
+                </article>
+                <!-- Split Cassia (Natural Split Bark) -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-split.jpg" alt="Split Cassia (Natural Split Bark)" width="540" height="960" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.11</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Split Cassia (Natural Split Bark) — 6.5 MT / 20FCL · 15 MT / 40HC (22–24 MT Pressed)</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai & Quang Nam</div>
+                        <h3 class="classified-card-title">Split Cassia (Natural Split Bark)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">13.5% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 2.0% – 4.0% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Length 25–45 cm (80% min); Thickness 1.5–3.0 mm; Yellow/reddish color, no fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Cartons (Net 10 kg) or 20–25 kg Pressed Bales</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">6.5 MT / 20FCL · 15 MT / 40HC (22–24 MT Pressed)</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('split-cassia')">Request Quote</button>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 data-i18n="products.cinnamon_leaf.title">Cinnamon Leaves</h3>
-                        <p data-i18n="products.cinnamon_leaf.desc">Fresh dried cinnamon leaves for essential oil extraction</p>
-                        <div class="product-specs">
-                            <span class="spec-tag">Essential Oil</span>
-                            <span class="spec-tag">Dried</span>
+                </article>
+                <!-- Square / Round Cut & Broken Cassia (KABC / KBBC) -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-chips.jpg" alt="Square / Round Cut & Broken Cassia (KABC / KBBC)" width="542" height="962" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.19</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Square / Round Cut & Broken Cassia (KABC / KBBC) — 8.5–10 MT / 20FCL · 18 MT / 40HC (24–25 MT Pressed)</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai, Vietnam</div>
+                        <h3 class="classified-card-title">Square / Round Cut & Broken Cassia (KABC / KBBC)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">13.5% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">1.0% – 2.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 2.0% – 4.2% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Square/round cut 2–5 cm (skin removed optional) or clean broken pieces; No fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Cartons (Net 20 kg) or 25 kg Pressed PP Bales</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">8.5–10 MT / 20FCL · 18 MT / 40HC (24–25 MT Pressed)</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('broken-cut-cassia')">Request Quote</button>
                         </div>
                     </div>
-                </div>
-
-                <!-- Star Anise -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/star-anise.jpg" alt="Star Anise" width="468" height="962" loading="lazy" decoding="async">
-                        <div class="product-overlay">
-                            <a href="pages/products/star-anise.html" class="view-details-btn" data-i18n="products.view_details">View Details</a>
+                </article>
+                <!-- Pure Cassia Cinnamon Powder (60 – 120 Mesh) -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-powder.jpg" alt="Pure Cassia Cinnamon Powder (60 – 120 Mesh)" width="1920" height="2560" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.20</span>
+                        <span class="classified-grade-badge">80–120 Mesh</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Pure Cassia Cinnamon Powder (60 – 120 Mesh) — 15–16 MT / 20FCL · 26–27 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai, Vietnam</div>
+                        <h3 class="classified-card-title">Pure Cassia Cinnamon Powder (60 – 120 Mesh)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">10.0% – 12.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">0.5% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 1.5% – 4.0% (grade options)</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Fineness 60–120 mesh; 100% pure ground bark, natural brown-yellow color, no additives</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Multi-wall Kraft / PE / PP Bags (Net 20–25 kg)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">15–16 MT / 20FCL · 26–27 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('cassia-powder')">Request Quote</button>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 data-i18n="products.star_anise.title">Star Anise</h3>
-                        <p data-i18n="products.star_anise.desc">Whole star anise with rich aroma and flavor</p>
-                        <div class="product-specs">
-                            <span class="spec-tag">Whole</span>
-                            <span class="spec-tag">Spring Harvest</span>
+                </article>
+                <!-- Diagonal-Sliced Cinnamon Twigs (Gui Zhi) & Branches -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-gallery/cinnamon-twig-slices.jpg" alt="Diagonal-Sliced Cinnamon Twigs (Gui Zhi) & Branches" width="900" height="1600" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.19</span>
+                        <span class="classified-grade-badge">Gui Zhi Slices</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Diagonal-Sliced Cinnamon Twigs (Gui Zhi) & Branches — 8.0–9.0 MT / 20FCL · 18–20 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai, Vietnam</div>
+                        <h3 class="classified-card-title">Diagonal-Sliced Cinnamon Twigs (Gui Zhi) & Branches</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">12.5% – 13.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Volatile Oil: 1.0% – 2.0%</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Diagonal slices 2–4 mm, cut segments 1–3 cm, or whole branches 20–50 cm; Clean, no mold</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">PP Woven Bags (Net 25–40 kg)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">8.0–9.0 MT / 20FCL · 18–20 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon-branches.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('sliced-twigs-branches')">Request Quote</button>
                         </div>
                     </div>
-                </div>
-
-                <!-- Green Tea -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/green-tea.jpg" alt="Vietnamese Green Tea" width="1200" height="896" loading="lazy" decoding="async">
-                        <div class="product-overlay">
-                            <a href="pages/products/green-tea.html" class="view-details-btn" data-i18n="products.view_details">View Details</a>
+                </article>
+                <!-- Dried Vietnamese Cinnamon Leaves (Pressed Bales) -->
+                <article class="classified-spec-card fade-in" data-category="cinnamon">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/cinnamon-gallery/cinnamon-leaves-pile.jpg" alt="Dried Vietnamese Cinnamon Leaves (Pressed Bales)" width="1600" height="901" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0906.19</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Dried Vietnamese Cinnamon Leaves (Pressed Bales) — 8.0–9.0 MT / 20FCL · 18–20 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Yen Bai, Vietnam</div>
+                        <h3 class="classified-card-title">Dried Vietnamese Cinnamon Leaves (Pressed Bales)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">12.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">2.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Leaf Essential Oil: 1.2% – 2.2%</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Shade/sun-dried highland leaves, strong natural aroma, free of mold</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Hydraulic Pressed Bales (25–40 kg) or Jumbo PP Bags</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">8.0–9.0 MT / 20FCL · 18–20 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/cinnamon-leaves.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('cinnamon-leaves')">Request Quote</button>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 data-i18n="products.green_tea.title">Green Tea</h3>
-                        <p data-i18n="products.green_tea.desc">Premium Vietnamese green tea leaves</p>
-                        <div class="product-specs">
-                            <span class="spec-tag">Sencha</span>
-                            <span class="spec-tag">Highland</span>
+                </article>
+                <!-- Autumn Harvest Whole Star Aniseed — Grade A -->
+                <article class="classified-spec-card fade-in" data-category="anise">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/star-anise-gallery/star-anise-macro-pod.jpg" alt="Autumn Harvest Whole Star Aniseed — Grade A" width="1600" height="901" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0909.61</span>
+                        <span class="classified-grade-badge">Grade A Export</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Autumn Harvest Whole Star Aniseed — Grade A — 6.5–7.5 MT / 20FCL · 15.0–16.0 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Lang Son, Vietnam</div>
+                        <h3 class="classified-card-title">Autumn Harvest Whole Star Aniseed — Grade A</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">12.5% – 13.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: ≥ 8.5% – 10.5% (Trans-anethole ≥ 85%)</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Flower size ≥ 2.5 cm (80% min); Broken ≤ 5%; Reddish-brown natural color, no fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">5-Ply Export Cartons with PE Liner (Net 5 kg / 10 kg)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">6.5–7.5 MT / 20FCL · 15.0–16.0 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/star-anise.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('autumn-star-anise')">Request Quote</button>
                         </div>
                     </div>
-                </div>
-
-                <!-- Black Tea -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/black-tea.jpg" alt="Vietnamese Black Tea" width="1200" height="896" loading="lazy" decoding="async">
-                        <div class="product-overlay">
-                            <a href="pages/products/black-tea.html" class="view-details-btn" data-i18n="products.view_details">View Details</a>
+                </article>
+                <!-- Spring Harvest Whole Star Aniseed (Sun / Steam Dried) -->
+                <article class="classified-spec-card fade-in" data-category="anise">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/star-anise-gallery/star-anise-hand-select.jpg" alt="Spring Harvest Whole Star Aniseed (Sun / Steam Dried)" width="1600" height="1200" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0909.61</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Spring Harvest Whole Star Aniseed (Sun / Steam Dried) — 7.0–7.5 MT / 20FCL · 15.5–16.5 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Lang Son, Vietnam</div>
+                        <h3 class="classified-card-title">Spring Harvest Whole Star Aniseed (Sun / Steam Dried)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">13.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 7.0% – 9.0% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Flower size ≥ 2.0–2.5 cm (75% min); Broken ≤ 8–10%; Natural sun-dried or steamed, no fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Strapped Export Cartons (Net 10 kg)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">7.0–7.5 MT / 20FCL · 15.5–16.5 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/star-anise.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('spring-star-anise')">Request Quote</button>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 data-i18n="products.black_tea.title">Black Tea</h3>
-                        <p data-i18n="products.black_tea.desc">High-quality Vietnamese black tea</p>
-                        <div class="product-specs">
-                            <span class="spec-tag">Whole Leaf</span>
-                            <span class="spec-tag">Highland</span>
+                </article>
+                <!-- Broken Star Aniseed (For Grinding & Oil Extraction) -->
+                <article class="classified-spec-card fade-in" data-category="anise">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/star-anise-gallery/star-anise-sun-drying.jpg" alt="Broken Star Aniseed (For Grinding & Oil Extraction)" width="1600" height="1200" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0909.61</span>
+                        <span class="classified-grade-badge">Extraction Grade</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Broken Star Aniseed (For Grinding & Oil Extraction) — 8.5–9.5 MT / 20FCL · 18.0–20.0 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Lang Son, Vietnam</div>
+                        <h3 class="classified-card-title">Broken Star Aniseed (For Grinding & Oil Extraction)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">13.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">2.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Essential Oil: 6.5% – 8.5% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Clean broken carpels & seeds, sifted, cost-effective for five-spice grinding & oil distillation, no fungus</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Cartons (10–15 kg) or PP Woven Bags (20–25 kg)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">8.5–9.5 MT / 20FCL · 18.0–20.0 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/star-anise.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('broken-star-anise')">Request Quote</button>
                         </div>
                     </div>
-                </div>
-
-                <!-- Cinnamon Branches -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/products/cinnamon-branches.jpg" alt="Cinnamon Branches" width="1618" height="787" loading="lazy" decoding="async">
-                        <div class="product-overlay">
-                            <a href="pages/products/cinnamon-branches.html" class="view-details-btn" data-i18n="products.view_details">View Details</a>
+                </article>
+                <!-- Vietnamese Highland Green Tea (OP, Pekoe, PS, BPS) -->
+                <article class="classified-spec-card fade-in" data-category="tea">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/tea-gallery/tea-fresh-buds-closeup.jpg" alt="Vietnamese Highland Green Tea (OP, Pekoe, PS, BPS)" width="1280" height="960" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0902.20</span>
+                        <span class="classified-grade-badge">OP · Pekoe · PS · BPS</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Vietnamese Highland Green Tea (OP, Pekoe, PS, BPS) — 10–11 MT / 20FCL · 20–22 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Northern Highlands, Vietnam</div>
+                        <h3 class="classified-card-title">Vietnamese Highland Green Tea (OP, Pekoe, PS, BPS)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">7.5% – 8.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">0.5% – 1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Water-Soluble Extract: ≥ 32% – 36% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">Full grades: OP (whole twisted leaf), Pekoe, PS, BPS, TH101; Total Ash 4.0–6.5%; Fiber ≤ 15.5%</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">PE-lined Multi-wall Kraft Sacks or PP Bags (20–40 kg net + container desiccants)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">10–11 MT / 20FCL · 20–22 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/green-tea.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('highland-green-tea')">Request Quote</button>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3 data-i18n="products.cinnamon_branches.title">Cinnamon Branches</h3>
-                        <p data-i18n="products.cinnamon_branches.desc">Natural cinnamon branches for decoration and aroma</p>
-                        <div class="product-specs">
-                            <span class="spec-tag">Natural</span>
-                            <span class="spec-tag">Decorative</span>
+                </article>
+                <!-- Vietnamese Highland Black Tea (Orthodox OP, FBOP, Pekoe, PS, BPS & CTC) -->
+                <article class="classified-spec-card fade-in" data-category="tea">
+                    <div class="classified-card-media zoomable-media">
+                        <img src="images/products/tea-gallery/tea-sculpted-hills.jpg" alt="Vietnamese Highland Black Tea (Orthodox OP, FBOP, Pekoe, PS, BPS & CTC)" width="1276" height="956" loading="lazy" decoding="async">
+                        <span class="classified-hs-pill">HS Code: 0902.40</span>
+                        <span class="classified-grade-badge">Orthodox & CTC</span>
+                        <div class="warehouse-photo-caption" style="display:none;">Vietnamese Highland Black Tea (Orthodox OP, FBOP, Pekoe, PS, BPS & CTC) — 10–12 MT / 20FCL · 21–24 MT / 40HC</div>
+                    </div>
+                    <div class="classified-card-body">
+                        <div class="classified-origin-line">📍 Northern Highlands, Vietnam</div>
+                        <h3 class="classified-card-title">Vietnamese Highland Black Tea (Orthodox OP, FBOP, Pekoe, PS, BPS & CTC)</h3>
+                        <div class="classified-spec-rows">
+                            <div class="classified-spec-row"><span class="cs-key">Moisture:</span><span class="cs-val">7.5% – 8.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Admixture:</span><span class="cs-val">0.5% – 1.0% max</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Oil / Extract:</span><span class="cs-val">Water-Soluble Extract: ≥ 32% – 38% min</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Size &amp; Condition:</span><span class="cs-val">90–100% oxidized; Grades OP, FBOP, Pekoe, PS, BPS & CTC (BP1, PF1, PD); Total Ash 4.0–6.5%</span></div>
+                            <div class="classified-spec-row"><span class="cs-key">Packing:</span><span class="cs-val">Multi-wall PE-lined Kraft Sacks (20–30 kg) or PP/PE Bags (30–45 kg)</span></div>
+                        </div>
+                        <div class="classified-container-bar">
+                            <span class="cc-label">🚢 Load (20FCL / 40HC):</span>
+                            <strong class="cc-val">10–12 MT / 20FCL · 21–24 MT / 40HC</strong>
+                        </div>
+                        <div class="classified-card-actions">
+                            <a href="pages/products/black-tea.html" class="btn btn-secondary classified-btn">Full Details</a>
+                            <button type="button" class="btn btn-primary classified-btn" onclick="requestGradeQuote('highland-black-tea')">Request Quote</button>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+<!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-content">
@@ -808,6 +1041,7 @@
     <!-- Scripts -->
     <script src="config/site-config.js"></script>
     <script src="languages/translations.js"></script>
+    <script src="js/catalog-specs.js"></script>
     <script src="js/main.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 </body>
